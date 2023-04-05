@@ -1,0 +1,76 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.logo {
+  border-style: none;
+  height: 10px;
+  padding-left: 95px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+form {
+  background-color: lightgray;
+  height: 30px;
+}
+
+.tagline {
+  background-color: blue;
+}
+
+.explore {
+  border-radius: 25px;
+  height: 50px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+
+.instructions {
+  background-color: red;
+  position: relative;
+}
+.instructions .btn-instructions {
+  border-radius: 30px;
+  height: 85px;
+  width: 320px;
+  font-family: Roboto;
+  display: flex;
+  padding: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-left: 100px;
+}
+
+.icon-phone {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+}
+
+.icon-menu {
+  position: absolute;
+  top: 190px;
+  left: 40px;
+}
+
+.icon-restaurant {
+  position: absolute;
+  bottom: 80px;
+  left: 40px;
+}
+
+.restaurants {
+  background-color: #FF79DA;
+}
+
+/*# sourceMappingURL=style.css.map */
