@@ -14,22 +14,22 @@ html {
 
 .logo {
   border-style: none;
-  height: 10px;
-  padding-left: 95px;
+  height: 40px;
+  padding-left: 50px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
 form {
-  background-color: lightgray;
-  height: 30px;
+  background-color: #f2f2f2;
+  height: 60px;
 }
 
 .tagline {
   background-color: blue;
 }
 
-.explore {
+.explore-btn {
   border-radius: 25px;
   height: 50px;
   background-image: linear-gradient(#FF79DA, #9356DC);
