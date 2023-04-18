@@ -17,8 +17,8 @@ $medium-grey: #ECECEC;
 $dark-grey: #DEDEDE;
 
 body {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 header {
@@ -26,6 +26,7 @@ header {
   border-bottom: 1px solid black;
   margin-bottom: 0px;
   background-color: $light-grey;
+  
 }
 
 
@@ -37,6 +38,7 @@ header {
   margin-bottom: 30px;
   display: flex;
   background-color: $light-grey;
+ 
 
 }
 
@@ -149,10 +151,6 @@ header {
 @media (min-width:769px) and (max-width: 992px) {
 
 
-  .logo {
-    margin-left: 190px;
-  }
-
   .search-bar {
     left: 270px;
   }
@@ -194,7 +192,60 @@ header {
 
 @media (min-width:993px) {
 
+.logo {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 200px;
+  height: 70px;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-bar {
+  left: 260px;
+}
+
+// ::placeholder {
+ 
+  
+// }
+
+.explore {
+  position: relative;
+}
+
+.book-menu {
+  position: absolute;
+  font-size: 35px;
+  left: 270px;
+}
+
+.top-of-the-art  {
+  position: absolute;
+  left: 140px;
+  font-size: 30px;
+}
+
 .explore-btn {
+  position: absolute;
+  left: 270px;
+  display: inline;
+}
+
+.instructions {
+ display: flex;
+ font-size: larger;
+ 
+}
+
+
+.instructions-btn {
+ font-size: x-large;
+ width: 300px;
+ 
+
  
 }
 

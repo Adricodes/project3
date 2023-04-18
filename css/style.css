@@ -13,8 +13,8 @@ html {
 }
 
 body {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 header {
@@ -133,9 +133,6 @@ header {
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-  .logo {
-    margin-left: 190px;
-  }
   .search-bar {
     left: 270px;
   }
@@ -164,6 +161,42 @@ header {
     font-size: medium;
     width: 200px;
     display: inline;
+  }
+}
+@media (min-width: 993px) {
+  .logo {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 200px;
+    height: 70px;
+  }
+  .search-box {
+    position: relative;
+  }
+  .search-bar {
+    left: 260px;
+  }
+  .explore {
+    position: relative;
+  }
+  .book-menu {
+    position: absolute;
+    font-size: 35px;
+    left: 270px;
+  }
+  .top-of-the-art {
+    position: absolute;
+    left: 140px;
+    font-size: 30px;
+  }
+  .explore-btn {
+    position: absolute;
+    left: 270px;
+    display: inline;
+  }
+  .instructions-btn {
+    font-size: x-large;
+    width: 300px;
   }
 }
 
