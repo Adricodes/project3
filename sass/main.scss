@@ -20,7 +20,9 @@ $dark-grey: #DEDEDE;
 
 
 body {
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
@@ -98,7 +100,7 @@ header {
 
 .book-menu {
   position: absolute;
-  font-size: 22px;
+  font-size: 20px;
   position: relative;
   margin-top: 20px;
   left: 40px;
@@ -106,19 +108,20 @@ header {
 }
 
 .top-of-the-art {
-  font-size: 19px;
+  font-size: 18px;
   text-align: center;
   position: absolute;
   top: 100px;
-  color: #bbb;
+  color: black;
+  font-weight: 200;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 
 }
 
 .explore-btn {
-  width: 250px;
-  height: 60px;
+  width: 230px;
+  height: 50px;
   font-size: 17px;
   border-radius: 30px;
   margin-top: 30px;
@@ -130,50 +133,45 @@ header {
   border: none;
 }
 
-.instructions-section {
-  position: relative;
-  flex-direction: column;
-  display: flex;
-}
-
-.instructions-title {
-  position: absolute;
-  left: 20px;
-  margin-top: 50px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 22px;
-}
-
 .instructions-btn-area {
-  position: absolute;
+
   display: flex;
   flex-wrap: wrap;
   height: 200px;
   width: 300px;
   gap: 30px;
-  left: 40px;
-  top: 100px;
+  margin-left: 30px;
+
+}
+
+.instructions-title {
+
+  margin-left: 30px;
+  margin-top: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 22px;
 }
 
 .instructions-1 {
-  position: absolute;
-  left: 80px;
+
+  margin-left: 90px;
   font-size: 16px;
-  top: 30px;
+  margin-top: 20px;
 }
 
 .instructions-2 {
-  position: absolute;
-  left: 80px;
-  top: 125px;
+
+  margin-left: 80px;
+  margin-top: 20px;
   font-size: 16px;
 }
 
 .instructions-3 {
-  position: absolute;
-  left: 80px;
-  font-size: 16px;
-  top: 230px;
+
+  margin-left: 79px;
+  margin-top: 25px;
+  font-size: 15px;
+
 }
 
 .instructions-btn {
@@ -189,29 +187,57 @@ header {
 }
 
 .phone-icon {
-  position: absolute;
-  left: 50px;
-  top: 30px;
+  margin-left: 40px;
   font-size: 20px;
-}
-
-.circle1 {
-  color: #FF79DA;
 }
 
 
 .menu-icon {
-  position: absolute;
-  left: 50px;
-  bottom: 60px;
   font-size: 20px;
 }
 
 .restaurant-icon {
-  position: absolute;
+  margin-bottom: 50px;
   font-size: 20px;
-  left: 50px;
-  top: 230px;
+}
+
+.restaurants {
+  background-color: lightgray;
+  margin-top: 130px;
+  position: relative;
+
+
+}
+
+h3 {
+  font-size: 22px;
+  position: absolute;
+  top: 40px
+}
+
+
+
+.cards {
+  background-color: white;
+  border-radius: 20px;
+  width: 290px;
+  height: 230px;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-top: 40px;
+
+}
+
+.full-palette-pic {
+  width: 290px;
+  height: 160px;
+  border-radius: 20px 20px 0 0;
+}
+
+.enchanted-pic {
+  width: 290px;
+  height: 160px;
+  border-radius: 20px 20px 0 0;
 }
 
 
@@ -305,18 +331,21 @@ header {
     display: inline;
   }
 
-  .instructions {
-    display: flex;
-    font-size: larger;
-
-  }
-
 
   .instructions-btn {
     font-size: x-large;
     width: 300px;
 
+  }
 
+  .cards {
+    color: #bbb;
+    border-radius: 20px;
+    padding: 11px;
+    width: 230px;
+    height: 210px;
+    flex-direction: column;
+    padding: 5px 5px 5px;
 
   }
 
