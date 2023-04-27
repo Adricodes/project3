@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Roboto:wgth@400;700&family=Shrikhand&display=swap">
+    href="https://fonts.googleapis.com/css2?family=Roboto:wghth@400;700&family=Shrikhand&display=swap">
   <script src="https://kit.fontawesome.com/fa41481a23.js" crossorigin="anonymous"></script>
 </head>
 
@@ -40,12 +40,13 @@
     <div class="instructions-btn-area">
 
       <div class="instructions-btn">
-        <i class="fa-sharp fa-solid fa-circle-1"></i>
+        <div class="step-1"></div>
         <div class="instructions-1">Choose a restaurant</div>
         <i class="fa-solid fa-mobile-screen phone-icon"></i>
       </div>
 
       <div class="instructions-btn">
+        <div class="step-2"></div>
         <div class="instructions-2">Create a menu</div>
         <i class="fa-solid fa-list menu-icon"></i>
       </div>
@@ -53,6 +54,7 @@
 
 
       <div class="instructions-btn">
+        <div class="step-3"></div>
         <div class="instructions-3">Go enjoy it at a restaurant</div>
         <i class="fa-solid fa-store restaurant-icon"></i>
       </div>
@@ -62,37 +64,65 @@
   <div class="restaurants">
     <h3 class="restaurant-title">Restaurants</h3>
 
-
-    <div class="cards">
-      <div class="full-palette">
-        <img class="full-palette-pic" src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-          alt="restaurant table with plate">
-        <p>The Full Palette</p>
-        <p>New York</p>
+    <div class="restaurant-cardbox">
+      <div class="restaurant-cards">
+        <div class="full-palette">
+          <img class="full-palette-pic" src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            alt="restaurant table with plate">
+          <div class="name-city">
+            <p><b>The Full Palette</b></p>
+            <p>New York</p>
+          </div>
+        </div>
       </div>
+
+
+      <div class="restaurant-cards">
+        <div class="enchanted">
+          <img class="enchanted-pic" src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+            alt="dish and drink on restaurant table with menu">
+          <div class="name-city">
+            <p><b>The Enchanted Plate</b></p>
+            <p>New York</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="restaurant-cards">
+        <div class="bastille">
+          <img class="bastille-pic" src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+            alt="dish in front of image with drink and plates on background">
+          <div class="name-city">
+            <p><b>Bastille</b></p>
+            <p>New York</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="restaurant-cards">
+        <div class="le-gourmand">
+          <img class="gourmand-pic" src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+            alt="long dish sitting on restaurant table with food">
+          <div class="name-city">
+            <p><b>Le Gourmand</b></p>
+            <p>New York</p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+
+        <h2 class="footer-header">ohmyfood</h2>
+        <ul>
+          <li><a href="#" class="clickable">Suggest a restaurant</a></li>
+          <li><a href="#" class="clickable">Become a partner</a></li>
+          <li><a class="clickable" href="#">Legal</a></li>
+          <li><a class="clickable" href="#">Contact</a></li>
+        </ul>
     </div>
 
-
-    <div class="cards">
-      <div class="enchanted">
-        <img class="enchanted-pic" src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-          alt="dish and drink on restaurant table with menu">
-        <p>The Enchanted Plate</p>
-        <p>New York</p>
-      </div>
-    </div>
-
-    <div class="cards">
-      <div class="bastille">
-        <img class="bastille-pic" src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-          alt="dish in front of image with drink and plates on background" width="290px" height="160px">
-        <p>Bastille</p>
-        <p>New York</p>
-      </div>
-    </div>
-
-
-
-  </div>
+    </footer>
 
 </body>
+
+</html>
