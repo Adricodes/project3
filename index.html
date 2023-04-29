@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Roboto:wghth@400;700&family=Shrikhand&display=swap">
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap">
   <script src="https://kit.fontawesome.com/fa41481a23.js" crossorigin="anonymous"></script>
 </head>
 
@@ -40,29 +40,29 @@
     <div class="instructions-btn-area">
 
       <div class="instructions-btn">
-        <div class="step-1"></div>
-        <div class="instructions-1">Choose a restaurant</div>
-        <i class="fa-solid fa-mobile-screen phone-icon"></i>
+        <div class="instructions-btn__step">1</div>
+        <div class="instructions-btn__text">Choose a restaurant</div>
+        <i class="instructions-btn__icon fa-solid fa-mobile-screen"></i>
       </div>
 
       <div class="instructions-btn">
-        <div class="step-2"></div>
-        <div class="instructions-2">Create a menu</div>
-        <i class="fa-solid fa-list menu-icon"></i>
+        <div class="instructions-btn__step">2</div>
+        <div class="instructions-btn__text">Create a menu</div>
+        <i class="instructions-btn__icon fa-solid fa-list menu-icon"></i>
       </div>
 
 
 
       <div class="instructions-btn">
-        <div class="step-3"></div>
-        <div class="instructions-3">Go enjoy it at a restaurant</div>
-        <i class="fa-solid fa-store restaurant-icon"></i>
+        <div class="instructions-btn__step">3</div>
+        <div class="instructions-btn__text">Go enjoy it at a restaurant</div>
+        <i class="instructions-btn__icon fa-solid fa-store restaurant-icon"></i>
       </div>
     </div>
   </section>
 
   <div class="restaurants">
-    <h3 class="restaurant-title">Restaurants</h3>
+    <h2 class="restaurant-title">Restaurants</h2>
 
     <div class="restaurant-cardbox">
       <div class="restaurant-cards">
@@ -109,20 +109,24 @@
           </div>
         </div>
       </div>
-
-      <footer>
-
-        <h2 class="footer-header">ohmyfood</h2>
-        <ul>
-          <li><a href="#" class="clickable">Suggest a restaurant</a></li>
-          <li><a href="#" class="clickable">Become a partner</a></li>
-          <li><a class="clickable" href="#">Legal</a></li>
-          <li><a class="clickable" href="#">Contact</a></li>
-        </ul>
     </div>
+  </div>
 
-    </footer>
+  <footer>
+
+    <h3 class="footer-header">ohmyfood</h3>
+
+    <ul>
+      <li><a class="list-logo">Suggest a restaurant</a></li>
+      <!-- <i class="fa-solid fa-utensils"></i> -->
+
+      <li><a class="list-logo">Become a partner</a></li>
+      <!-- <i class="fa-sharp fa-solid fa-handshake-angle"></i>  -->
+
+      <li><a class="list-text">Legal</a></li>
+      <li><a class="list-text">Contact</a></li>
+    </ul>
+
+  </footer>
 
 </body>
-
-</html>
