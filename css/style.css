@@ -21,24 +21,23 @@ header {
   display: flex;
   margin-top: 0px;
   height: 70px;
-  background-color: #FAFAFA;
+  background-color: white;
+  justify-content: center;
 }
 
 .logo {
   border-style: none;
   height: 27px;
-  padding-left: 80px;
   margin-top: 20px;
   margin-bottom: 30px;
   display: flex;
-  background-color: #FAFAFA;
 }
 
 .search-box {
   padding-bottom: 50px;
   display: flex;
   position: relative;
-  background-color: #DEDEDE;
+  background-color: #e5e6e7;
 }
 
 .search-bar {
@@ -64,7 +63,7 @@ header {
 
 .no-outline {
   border: none;
-  background-color: #DEDEDE;
+  background-color: #e5e6e7;
 }
 
 ::placeholder {
@@ -74,7 +73,7 @@ header {
 
 .explore {
   display: flex;
-  background-color: #ECECEC;
+  background-color: #eff0f0;
   padding-top: 20px;
   padding-bottom: 70px;
   height: 300px;
@@ -82,7 +81,6 @@ header {
 }
 
 .book-menu {
-  position: absolute;
   font-size: 20px;
   position: relative;
   margin-top: 20px;
@@ -98,6 +96,8 @@ header {
   color: black;
   font-weight: 200;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .explore-btn {
@@ -114,11 +114,16 @@ header {
   border: none;
 }
 
+.instructions-title {
+  margin-left: 30px;
+  margin-top: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px;
+}
+
 .instructions-btn-area {
   display: flex;
   flex-wrap: wrap;
-  height: 200px;
-  width: 300px;
   gap: 30px;
   margin-left: 30px;
 }
@@ -129,9 +134,12 @@ header {
   border-style: solid;
   border-radius: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  width: 360px;
+  width: 300px;
   height: 70px;
+  left: 30px;
+  margin-top: 30px;
   position: relative;
+  background-color: #eeeeee;
 }
 .instructions-btn__step {
   display: flex;
@@ -149,63 +157,13 @@ header {
   position: absolute;
   padding-left: 40px;
   top: 25px;
+  color: #2a3137;
 }
 .instructions-btn__text {
   padding-left: 80px;
   position: absolute;
   top: 20px;
   font-size: 16px;
-}
-
-.instructions-title {
-  margin-left: 30px;
-  margin-top: 50px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 22px;
-}
-
-.instructions-1 {
-  margin-left: 90px;
-  font-size: 16px;
-  margin-top: 20px;
-}
-
-.instructions-2 {
-  margin-left: 80px;
-  margin-top: 20px;
-  font-size: 16px;
-}
-
-.instructions-3 {
-  margin-left: 79px;
-  margin-top: 25px;
-  font-size: 15px;
-}
-
-.instructions-btn {
-  display: block;
-  border-style: solid;
-  border-radius: 20px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  width: 360px;
-  height: 70px;
-  background-color: #DEDEDE;
-  font-size: 18px;
-}
-
-.phone-icon {
-  padding-left: 50px;
-  font-size: 18px;
-}
-
-.menu-icon {
-  font-size: 18px;
-  padding-left: 50px;
-}
-
-.restaurant-icon {
-  padding-left: 50px;
-  font-size: 18px;
 }
 
 .restaurants {
@@ -216,18 +174,23 @@ header {
 }
 
 .restaurant-title {
+  position: absolute;
   left: 40px;
-  font-weight: 900;
+  top: 30px;
+  font-weight: 700;
 }
 
 .restaurant-cardbox {
-  padding-top: 90px;
+  padding-top: 110px;
   padding-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 h2 {
   font-size: 22px;
-  position: absolute;
   top: 40px;
 }
 
@@ -237,8 +200,6 @@ h2 {
   width: 290px;
   height: 230px;
   flex-direction: column;
-  margin-left: 40px;
-  margin-top: 20px;
 }
 
 .full-palette-pic,
@@ -255,9 +216,13 @@ h2 {
   margin-left: 20px;
 }
 
+.name {
+  font-weight: 800;
+}
+
 footer {
   padding-bottom: 20px;
-  background-color: gray;
+  background-color: #2a3137;
 }
 footer h3 {
   font-family: "shrikhand", cursive;
@@ -270,13 +235,20 @@ footer h3 {
 }
 footer ul {
   margin-bottom: 50px;
+  position: relative;
 }
 footer ul li {
   list-style: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 25px;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
+}
+footer ul .list-logo-1 {
+  margin-left: 20px;
+}
+footer ul .list-logo-2 {
+  margin-left: 15px;
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -304,27 +276,37 @@ footer ul li {
     margin-left: 290px;
     font-size: 20px;
   }
-  .instructions-btn-area {
+  .instructions-btn__area {
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
   }
   .instructions-btn {
     font-size: medium;
-    display: inline;
+    width: 210px;
+  }
+  .instructions-btn__icon {
+    right: 170px;
+  }
+  .instructions-btn__text {
+    left: -30px;
+  }
+  .instructions-btn__title {
+    margin-left: 290px;
+    font-size: 20px;
+  }
+  .restaurant-cardbox {
+    gap: 50px;
   }
 }
 @media (min-width: 993px) {
   .logo {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 200px;
-    height: 70px;
+    height: 40px;
   }
   .search-box {
     position: relative;
   }
   .search-bar {
-    left: 350px;
+    left: 620px;
   }
   .explore {
     position: relative;
@@ -332,24 +314,53 @@ footer ul li {
   .book-menu {
     position: absolute;
     font-size: 35px;
-    left: 270px;
+    left: 500px;
   }
   .top-of-the-art {
     position: absolute;
-    left: 140px;
+    left: 360px;
     font-size: 30px;
   }
   .explore-btn {
     position: absolute;
-    left: 270px;
     display: inline;
+    left: 500px;
+  }
+  .instructions {
+    position: relative;
+  }
+  .instructions-title {
+    font-size: 35px;
+  }
+  .instructions-btn__area {
+    display: flex;
+    flex-direction: column;
   }
   .instructions-btn {
     font-size: x-large;
-    width: 300px;
+    width: 500px;
+    left: 420px;
+    top: 90px;
+    margin-top: 90px;
   }
-  .instructions-title {
-    font-size: 20px;
+  .instructions-btn__step {
+    position: absolute;
+    right: 220px;
+    width: 60px;
+    top: -70px;
+    height: 60px;
+  }
+  .instructions-btn__text {
+    font-size: 30px;
+  }
+  h2 {
+    position: absolute;
+    font-size: 36px;
+    left: 540px;
+    top: 10px;
+  }
+  .restaurants {
+    margin-top: 220px;
   }
   .cards {
     color: #bbb;
@@ -359,6 +370,9 @@ footer ul li {
     height: 210px;
     flex-direction: column;
     padding: 5px 5px 5px;
+  }
+  .footer-header {
+    font-size: 30px;
   }
 }
 
