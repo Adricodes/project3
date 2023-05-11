@@ -23,6 +23,7 @@ header {
   height: 70px;
   background-color: white;
   justify-content: center;
+  position: relative;
 }
 
 .logo {
@@ -34,8 +35,7 @@ header {
 }
 
 .location {
-  display: flex;
-  position: relative;
+  height: 50px;
   font-size: 18px;
   background-color: #e5e6e7;
 }
@@ -47,9 +47,8 @@ header {
 }
 
 .paris {
-  position: absolute;
   font-size: 20px;
-  left: 110px;
+  left: 30px;
 }
 
 .search_text {
@@ -209,11 +208,13 @@ h2 {
   width: 290px;
   height: 160px;
   border-radius: 20px 20px 0 0;
+  object-fit: cover;
 }
 
 .name-city {
   line-height: 8px;
   margin-left: 20px;
+  color: black;
 }
 
 .name {
@@ -244,11 +245,9 @@ footer ul li {
   color: white;
   font-weight: 600;
 }
-footer ul .list-logo-1 {
+footer ul .list-logo-1, footer ul .list-logo-2 {
   margin-left: 15px;
-}
-footer ul .list-logo-2 {
-  margin-left: 11px;
+  color: white;
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
