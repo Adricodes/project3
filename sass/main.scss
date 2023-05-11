@@ -21,28 +21,27 @@ header {
 
 
 
-.search-box {
-  padding-bottom: 50px;
-  display: flex;
+.location{
+
+  display:flex;
   position: relative;
+  font-size: 18px;
   background-color: $light-grey;
 }
 
-.search-bar {
-  position: absolute;
-  left: 60px;
-  top: 15px;
-}
+
 
 .search-pin {
-
+  
   width: 50px;
   height: 40px;
   text-align: center;
 }
 
-.input {
-  font-size: 14px;
+.paris {
+  position: absolute;
+  font-size: 20px;
+  left: 110px;
 }
 
 
@@ -170,6 +169,10 @@ header {
   }
 }
 
+a {
+  text-decoration: none;
+
+}
 
 
 .restaurants {
@@ -224,6 +227,7 @@ h2 {
 .name-city {
   line-height: 8px;
   margin-left: 20px;
+  
 }
 
 .name {
@@ -260,11 +264,11 @@ footer {
     }
 
    .list-logo-1 {
-    margin-left: 20px;
+    margin-left: 15px;
    }
 
    .list-logo-2 {
-    margin-left: 15px;
+    margin-left: 11px;
    }
 
   }

@@ -33,17 +33,11 @@ header {
   display: flex;
 }
 
-.search-box {
-  padding-bottom: 50px;
+.location {
   display: flex;
   position: relative;
+  font-size: 18px;
   background-color: #e5e6e7;
-}
-
-.search-bar {
-  position: absolute;
-  left: 60px;
-  top: 15px;
 }
 
 .search-pin {
@@ -52,8 +46,10 @@ header {
   text-align: center;
 }
 
-.input {
-  font-size: 14px;
+.paris {
+  position: absolute;
+  font-size: 20px;
+  left: 110px;
 }
 
 .search_text {
@@ -166,6 +162,10 @@ header {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .restaurants {
   background-color: lightgray;
   margin-top: 130px;
@@ -245,10 +245,10 @@ footer ul li {
   font-weight: 600;
 }
 footer ul .list-logo-1 {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 footer ul .list-logo-2 {
-  margin-left: 15px;
+  margin-left: 11px;
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
