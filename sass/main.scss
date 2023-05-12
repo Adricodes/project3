@@ -25,7 +25,7 @@ header {
 .location{
   height: 50px;
   font-size: 18px;
-  background-color: $light-grey;
+  // background-color: $light-grey;
 }
 
 
@@ -35,28 +35,12 @@ header {
   width: 50px;
   height: 40px;
   text-align: center;
+  
 }
 
 .paris {
   font-size: 20px;
   left: 30px;
-}
-
-
-.search_text {
-  width: 230px;
-  height: 40px;
-
-}
-
-.no-outline {
-  border: none;
-  background-color: $light-grey;
-}
-
-::placeholder {
-  font-size: medium;
-  color: black
 }
 
 .explore {
@@ -281,9 +265,6 @@ footer {
 @media (min-width:769px) and (max-width: 992px) {
 
 
-  .search-bar {
-    left: 270px;
-  }
 
   .explore {
     position: relative;
@@ -291,29 +272,33 @@ footer {
 
   .book-menu {
     position: absolute;
-    left: 230px;
-    
-
+    left: 240px;
+    font-size: 30px;
   }
 
   .top-of-the-art {
     text-align: center;
     top: 90px;
-    left: 140px;
-    ;
+    left: 100px;
+    font-size: 26px;
+    
   }
 
   .explore-btn {
     position: absolute;
     left: 200px;
     top: 160px;
+    width: 230px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 800;
   }
 
 
   .instructions-title {
-
+    font-size: 10px;
     margin-left: 290px;
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .instructions-btn__area {
@@ -323,14 +308,17 @@ footer {
 
   .instructions-btn {
     font-size: medium;
-    width: 210px;
+    width: 500px;
+    left: 120px;
 
     &__icon {
-      right: 170px;
+      left: 10px;
+      font-size: x-large;
     }
 
     &__text {
-      left: -30px;
+      left: 40px;
+      font-size: x-large;
     }
 
     &__title {
@@ -343,6 +331,14 @@ footer {
 
   .restaurant-cardbox {
     gap: 50px;
+  }
+
+  .footer {
+    position: relative;
+  }
+
+  .footer-header {
+    font-size: xx-small\;
   }
 
 }
