@@ -22,7 +22,7 @@ header {
 
 
 
-.location{
+.location {
   height: 50px;
   font-size: 18px;
   // background-color: $light-grey;
@@ -170,7 +170,7 @@ a {
   position: absolute;
   left: 40px;
   top: 30px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .restaurant-cardbox {
@@ -221,8 +221,10 @@ h2 {
 }
 
 footer {
+  
   padding-bottom: 20px;
   background-color: $dark-grey;
+  
 
 
   h3 {
@@ -240,6 +242,7 @@ footer {
     margin-bottom: 50px;
     position: relative;
     
+    
 
     li {
       list-style: none;
@@ -250,11 +253,15 @@ footer {
       
     }
 
-   .list-logo-1, .list-logo-2 {
-    margin-left: 15px;
+   .list-logo-1 {
+    margin-left: 14px;
     color: white;
    }
 
+   .list-logo-2 {
+    margin-left: 8px;
+    color: white;
+   }
 
   }
 
@@ -264,7 +271,9 @@ footer {
 
 @media (min-width:769px) and (max-width: 992px) {
 
-
+  .logo {
+    height: 40px;
+  }
 
   .explore {
     position: relative;
@@ -298,7 +307,7 @@ footer {
   .instructions-title {
     font-size: 10px;
     margin-left: 290px;
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .instructions-btn__area {
@@ -338,7 +347,8 @@ footer {
   }
 
   .footer-header {
-    font-size: xx-small\;
+    font-size: x-large;
+    left: 150px;
   }
 
 }

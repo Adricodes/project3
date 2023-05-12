@@ -160,7 +160,7 @@ a {
   position: absolute;
   left: 40px;
   top: 30px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .restaurant-cardbox {
@@ -229,12 +229,19 @@ footer ul li {
   color: white;
   font-weight: 600;
 }
-footer ul .list-logo-1, footer ul .list-logo-2 {
-  margin-left: 15px;
+footer ul .list-logo-1 {
+  margin-left: 14px;
+  color: white;
+}
+footer ul .list-logo-2 {
+  margin-left: 8px;
   color: white;
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
+  .logo {
+    height: 40px;
+  }
   .explore {
     position: relative;
   }
@@ -261,7 +268,7 @@ footer ul .list-logo-1, footer ul .list-logo-2 {
   .instructions-title {
     font-size: 10px;
     margin-left: 290px;
-    font-size: 28px;
+    font-size: 30px;
   }
   .instructions-btn__area {
     display: flex;
@@ -291,7 +298,8 @@ footer ul .list-logo-1, footer ul .list-logo-2 {
     position: relative;
   }
   .footer-header {
-    font-size: xx-small\;;
+    font-size: x-large;
+    left: 150px;
   }
 }
 @media (min-width: 993px) {
