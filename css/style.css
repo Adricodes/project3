@@ -85,6 +85,7 @@ header {
   background-image: linear-gradient(#FF79DA, #9356DC);
   color: white;
   border: none;
+  cursor: pointer;
 }
 .explore-btn:hover {
   background: #dab4d5;
@@ -126,6 +127,7 @@ header {
   height: 25px;
   margin-left: -15px;
   background-color: #9356DC;
+  color: white;
 }
 .instructions-btn__icon {
   position: absolute;
@@ -142,6 +144,9 @@ header {
 .instructions-btn__area {
   display: flex;
   flex-wrap: wrap;
+}
+.instructions-btn--highlighted {
+  color: #9356DC;
 }
 
 a {
@@ -188,11 +193,28 @@ a {
   opacity: 0.4;
 }
 
+.new {
+  padding-top: 3px;
+  position: absolute;
+  background-color: #99E2D0;
+  color: #1e7c2f;
+  width: 70px;
+  height: 25px;
+  bottom: 195px;
+  left: 210px;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
 .restaurant-pic {
   width: 290px;
   height: 160px;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
+}
+.restaurant-pic--offset {
+  object-position: 50% 60%;
 }
 
 .name-city {
@@ -211,6 +233,7 @@ a {
   left: 230px;
   bottom: 20px;
   font-size: 30px;
+  color: black;
 }
 
 .filled-heart {
@@ -220,6 +243,10 @@ a {
   font-size: 30px;
   opacity: 0;
   background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: opacity 500ms;
 }
 
 .filled-heart:hover {
@@ -333,27 +360,36 @@ footer ul .list-text {
   .location {
     position: relative;
   }
-  .explore {
-    position: relative;
-  }
   .paris {
     left: 620px;
   }
-  .book-menu {
-    position: absolute;
-    font-size: 35px;
-    left: 530px;
+  .explore {
+    flex: 30%;
   }
   .top-of-the-art {
     position: relative;
     font-size: 30px;
     top: 40px;
   }
+  .main {
+    display: flex;
+    flex-direction: row;
+  }
+  .explore {
+    padding-left: 40px;
+    padding-right: 30px;
+    display: inline-block;
+  }
+  .book-menu {
+    font-size: 28px;
+    padding-left: 150px;
+    padding-top: 50px;
+  }
   .explore-btn {
     font-size: 20px;
   }
   .instructions {
-    position: relative;
+    display: flex;
   }
   .instructions-title {
     font-size: 35px;
@@ -365,12 +401,9 @@ footer ul .list-text {
   .instructions-btn {
     font-size: x-large;
     width: 500px;
-    left: 440px;
-    top: 90px;
     margin-top: 70px;
   }
   .instructions-btn__step {
-    position: absolute;
     width: 30px;
     height: 30px;
   }
