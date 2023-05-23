@@ -328,6 +328,7 @@ footer ul .list-text {
   .instructions-btn__area {
     display: flex;
     flex-direction: column;
+    padding-left: 110px;
   }
   .instructions-btn {
     font-size: medium;
@@ -365,23 +366,31 @@ footer ul .list-text {
     height: 35px;
     margin-top: 20px;
   }
+  .paris {
+    font-size: 24px;
+  }
   .top-of-the-art {
     font-size: 28px;
+    margin-top: 30px;
+    padding: 40px;
   }
   main {
     display: flex;
+    height: 600px;
   }
   .explore {
     width: 50%;
-    height: 500px;
   }
   .book-menu {
     font-size: 30px;
     padding-left: 0px;
-    padding-top: 50px;
+    padding-top: 60px;
   }
   .explore-btn {
-    font-size: 20px;
+    font-size: 23px;
+    margin-top: 60px;
+    width: 300px;
+    height: 80px;
   }
   .instructions {
     width: 40%;
@@ -407,18 +416,26 @@ footer ul .list-text {
     height: 30px;
   }
   .instructions-btn__text {
-    font-size: 28px;
+    font-size: 24px;
   }
   h2 {
     padding-left: 150px;
     padding-top: 20px;
     font-size: 30px;
   }
-  .restaurants {
-    margin-top: 220px;
-  }
   .name-city {
     font-size: 20px;
+  }
+  .restaurants {
+    margin-top: 0;
+  }
+  .restaurants h2 {
+    font-size: 30px;
+    top: 20px;
+    left: -25px;
+  }
+  .footer {
+    display: flex;
   }
   .footer-header {
     font-size: 30px;
