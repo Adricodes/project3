@@ -17,6 +17,24 @@ body {
   margin-right: 0;
 }
 
+.logo {
+  background-color: blue;
+}
+
+.calor {
+  font-size: 30px;
+}
+
+.dododo {
+  font-size: 30px;
+  color: 40px;
+}
+
+.rfg {
+  height: 20px;
+  width: 20px;
+}
+
 header {
   display: flex;
   margin-top: 0px;
@@ -273,7 +291,6 @@ footer h3 {
 }
 footer ul {
   margin-bottom: 50px;
-  position: relative;
 }
 footer ul li {
   list-style: none;
@@ -294,7 +311,7 @@ footer ul .list-text {
   color: white;
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 769px) {
   .logo {
     height: 40px;
   }
@@ -351,7 +368,13 @@ footer ul .list-text {
     gap: 50px;
   }
   .footer {
-    position: relative;
+    width: 100%;
+  }
+  .footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
   }
   .footer-header {
     font-size: x-large;
@@ -433,9 +456,6 @@ footer ul .list-text {
     font-size: 30px;
     top: 20px;
     left: -25px;
-  }
-  .footer {
-    display: flex;
   }
   .footer-header {
     font-size: 30px;

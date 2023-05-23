@@ -1,9 +1,11 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/baseline";
+@import "./pages/bastille";
+@import "./pages/thefullpalette";
 
 
-
+//TODO move to layout/_header.scss add import
 header {
   display: flex;
   margin-top: 0px;
@@ -23,7 +25,7 @@ header {
   display: flex;
 }
 
-
+//TODO move to pages/_home.scss add import
 .location {
   display: flex;
   justify-content: center;
@@ -268,6 +270,7 @@ a {
 
 }
 
+//TODO add to layout/_footer.scss add import
 footer {
 
   padding-bottom: 20px;
@@ -288,7 +291,7 @@ footer {
 
   ul {
     margin-bottom: 50px;
-    position: relative;
+
 
 
 
@@ -320,7 +323,7 @@ footer {
 
 
 
-@media (min-width:769px) and (max-width: 992px) {
+@media (min-width:769px) {
 
   .logo {
     height: 40px;
@@ -390,7 +393,6 @@ footer {
       font-size: 20px;
     }
 
-  
 
   }
 
@@ -399,13 +401,22 @@ footer {
   }
 
   .footer {
-    position: relative;
+    width: 100%;
+
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 
   .footer-header {
     font-size: x-large;
     left: 150px;
   }
+
 
 }
 
@@ -435,12 +446,12 @@ footer {
   main {
     display: flex;
     height: 600px;
-    
+
   }
 
   .explore {
     width: 50%;
-    
+
   }
 
   .book-menu {
@@ -509,13 +520,13 @@ footer {
     h2 {
       font-size: 30px;
       top: 20px;
-      left:-25px;
+      left: -25px;
     }
   }
 
-  .footer {
-   display: flex;
-  }
+  // .footer {
+  //  display: flex;
+  // }
 
   .footer-header {
     font-size: 30px;
