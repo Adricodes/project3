@@ -314,6 +314,7 @@ footer ul .list-text {
 @media (min-width: 769px) {
   .logo {
     height: 40px;
+    background-color: white;
   }
   .location {
     position: relative;
@@ -339,7 +340,7 @@ footer ul .list-text {
   }
   .instructions-title {
     font-size: 10px;
-    margin-left: 290px;
+    margin-left: 250px;
     font-size: 30px;
   }
   .instructions-btn__area {
@@ -367,14 +368,14 @@ footer ul .list-text {
   .restaurant-cardbox {
     gap: 50px;
   }
-  .footer {
-    width: 100%;
-  }
-  .footer ul {
+  footer ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    padding-right: 40px;
+  }
+  footer ul li {
+    width: 220px;
   }
   .footer-header {
     font-size: x-large;
@@ -388,6 +389,7 @@ footer ul .list-text {
   .logo {
     height: 35px;
     margin-top: 20px;
+    background-color: white;
   }
   .paris {
     font-size: 24px;
@@ -417,26 +419,25 @@ footer ul .list-text {
   }
   .instructions {
     width: 40%;
-    margin-left: 80px;
   }
   .instructions-btn {
-    width: 600px;
+    width: 300px;
   }
   .instructions-title {
     font-size: 28px;
-    padding-left: 110px;
+    padding-left: 2px;
   }
   .instructions-btn__area {
     display: flex;
-    margin-right: 40px;
+    padding-left: 110px;
   }
   .instructions-btn {
     font-size: 26px;
     margin-top: 40px;
   }
   .instructions-btn__step {
-    width: 30px;
-    height: 30px;
+    position: absolute;
+    right: 390px;
   }
   .instructions-btn__text {
     font-size: 24px;

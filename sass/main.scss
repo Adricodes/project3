@@ -153,6 +153,9 @@ header {
   &--highlighted {
     color: $primary-color;
   }
+
+ 
+
 }
 
 a {
@@ -327,6 +330,7 @@ footer {
 
   .logo {
     height: 40px;
+    background-color: white;
   }
 
   .location {
@@ -363,7 +367,7 @@ footer {
 
   .instructions-title {
     font-size: 10px;
-    margin-left: 290px;
+    margin-left: 250px;
     font-size: 30px;
   }
 
@@ -400,15 +404,16 @@ footer {
     gap: 50px;
   }
 
-  .footer {
-    width: 100%;
-
-
+  footer {
     ul {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      width: 100%;
+      padding-right: 40px;
+
+      li {
+        width: 220px;
+      }
     }
   }
 
@@ -430,6 +435,7 @@ footer {
   .logo {
     height: 35px;
     margin-top: 20px;
+    background-color: white;
   }
 
   .paris {
@@ -469,21 +475,21 @@ footer {
 
   .instructions {
     width: 40%;
-    margin-left: 80px;
+    
   }
 
   .instructions-btn {
-    width: 600px;
+    width: 300px;
   }
 
   .instructions-title {
     font-size: 28px;
-    padding-left: 110px;
+    padding-left: 2px;
   }
 
   .instructions-btn__area {
     display: flex;
-    margin-right: 40px;
+    padding-left: 110px;
 
   }
 
@@ -493,8 +499,8 @@ footer {
   }
 
   .instructions-btn__step {
-    width: 30px;
-    height: 30px;
+    position: absolute;
+    right: 390px;
   }
 
   .instructions-btn__text {
