@@ -5,6 +5,8 @@
 @import "./pages/thefullpalette";
 
 
+
+
 //TODO move to layout/_header.scss add import
 header {
   display: flex;
@@ -154,8 +156,6 @@ header {
     color: $primary-color;
   }
 
- 
-
 }
 
 a {
@@ -213,7 +213,7 @@ a {
   padding-top: 3px;
   position: absolute;
   background-color: $tertiary-color;
-  color: #1e7c2f;
+  color: $green;
   width: 70px;
   height: 25px;
   bottom: 195px;
