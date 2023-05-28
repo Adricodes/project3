@@ -30,14 +30,13 @@ body {
 }
 
 .menu-item {
-   
-    position: relative;
+    display: flex;
     background-color: $xlight-gray;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
     border-radius: 10px;
-  
     margin-left: -8px;
     margin-right: 10px;
+    max-width: 1400px;
 }
 
 .menu-dish {
@@ -63,7 +62,6 @@ body {
 .menu-price {
     padding-left: 100px;
     padding-top: 29px;
-    position: absolute;
     left: 200px;
     bottom: 1px;
 }
