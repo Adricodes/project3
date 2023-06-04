@@ -4,19 +4,61 @@ body {
 }
 
 header {
-    // position: relative;
+    position: relative;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .arrow {
+    position: absolute;
+    display: flex;
     font-size: 25px;
-    // position: absolute;
-    // right: 350px;
-    // top: 15px;
+    right: 200px;
+    top: 12px;
+    color: black;
+    width: 30%;
+
+    :hover {
+        opacity: 0.6;
+        ;
+    }
 }
 
+// .logo-area {
+//     position: absolute;
+//     font-family: 'shrikhand', cursive;
+//     top: -7px;
+//     left: 90px;
+//     width: 40%;
+// }
+
+// .logo {
+//     font-size: 20px;
+//     font-family: 'shrikhand', cursive;
+// }
+
 .arrow,
-.logo {
+// .logo,
+.empty-header {
     display: inline-block;
+
+}
+
+.empty-header {
+    width: 30%;
+    left: 20px;
+    color: aqua;
 }
 
 .bastille-pic {
@@ -28,8 +70,8 @@ header {
     padding-left: 20px;
     border-radius: 50px 50px 0 0;
     padding-bottom: 60px;
-    margin-top: -50px;
-    z-index: 1000;
+    top: -65px;
+    position: relative;
 
 
     &-checkmark {
@@ -39,9 +81,10 @@ header {
 }
 
 .menu-title {
-    font-size: 24px;
-    padding-top: 60px;
+    font-size: 28px;
+    padding-top: 30px;
     font-family: 'shrikhand', cursive;
+    font-weight: 400;
 }
 
 // .menu-title,
@@ -85,8 +128,12 @@ header {
 //   }
 
 .section-name {
-    text-decoration: underline 2px $tertiary-color;
-    text-underline-offset: 0.1em;
+    margin-bottom: 4px;
+}
+
+.underline {
+    border: 1px solid $tertiary-color;
+    width: 40px;
 
 }
 
@@ -115,10 +162,10 @@ header {
     &:hover {
         opacity: 0.6;
         box-shadow: 0px 5px 15px 0px rgba(158, 7, 7, 0.35);
-       
+
     }
 
-  
+
 
     // &-checkmark {
     //     width: 0;
@@ -180,9 +227,9 @@ header {
     margin-left: 50px;
 }
 
-// footer {
-//     margin-top: 30px;
-// }
+footer {
+    margin-top: -65px;
+}
 
 @media (min-width:769px) {
 
@@ -196,11 +243,13 @@ header {
 
     .menu-item {
         margin-left: 160px;
-       min-width: 380px;
-       max-width: 550px;
+        min-width: 380px;
+        max-width: 550px;
     }
 
-    .menu-dish, .menu-ingredients, .menu-price {
+    .menu-dish,
+    .menu-ingredients,
+    .menu-price {
         font-size: 22px;
     }
 
@@ -211,14 +260,14 @@ header {
         }
 
         .arrow {
-        //    position: absolute;
-        //    right: 600px;
+            //    position: absolute;
+            //    right: 600px;
         }
 
         .menu-item {
-          
-           min-width: 550px;
-           max-width: 950px;
+
+            min-width: 550px;
+            max-width: 950px;
         }
 
 
