@@ -3,62 +3,34 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 header {
     position: relative;
-    width: 100%;
+    padding-bottom: 8px;
 }
 
 nav {
     display: flex;
     justify-content: flex-start;
+    padding-left: 8px;
 }
 
 .logo {
     position: absolute;
-    top: 5px;
+    top: 0;
+    height: 25px;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .arrow {
-    position: absolute;
-    display: flex;
     font-size: 25px;
-    right: 200px;
-    top: 12px;
     color: black;
-    width: 30%;
 
     :hover {
         opacity: 0.6;
-        ;
     }
-}
-
-// .logo-area {
-//     position: absolute;
-//     font-family: 'shrikhand', cursive;
-//     top: -7px;
-//     left: 90px;
-//     width: 40%;
-// }
-
-// .logo {
-//     font-size: 20px;
-//     font-family: 'shrikhand', cursive;
-// }
-
-.arrow,
-// .logo,
-.empty-header {
-    display: inline-block;
-
-}
-
-.empty-header {
-    width: 30%;
-    left: 20px;
-    color: aqua;
 }
 
 .bastille-pic {
