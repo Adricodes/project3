@@ -198,14 +198,14 @@ footer {
   }
   .menu-title {
     font-size: 30px;
-    padding-left: 300px;
+    padding-left: 120px;
   }
   .section-name {
-    font-size: 26px;
-    padding-left: 300px;
+    font-size: 22px;
+    padding-left: 120px;
   }
   .underline {
-    margin-left: 300px;
+    margin-left: 120px;
     width: 60px;
   }
   .menu-item {
@@ -216,7 +216,7 @@ footer {
   .menu-dish,
   .menu-ingredients,
   .menu-price {
-    font-size: 22px;
+    font-size: 18px;
   }
   .explore-btn {
     margin-left: 250px;
@@ -232,10 +232,10 @@ footer {
     height: 20px;
   }
   .section-name {
-    padding-left: 400px;
+    padding-left: 120px;
   }
   .underline {
-    margin-left: 400px;
+    margin-left: 120px;
     width: 60px;
   }
   .menu-item {
@@ -245,6 +245,8 @@ footer {
   }
   .explore-btn {
     margin-left: 300px;
+    width: 250px;
+    height: 60px;
   }
 }
 .restaurants {
@@ -402,9 +404,9 @@ nav {
   position: absolute;
   top: 10px;
   left: 90px;
-  height: 25px;
   display: flex;
   font-family: "shrikhand", cursive;
+  font-size: 28px;
   justify-content: center;
   width: 50%;
 }
