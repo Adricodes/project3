@@ -137,26 +137,25 @@ nav {
 .menu-price {
     padding-top: 29px;
     padding-right: 20px;
+
 }
 
 .green-box-area {
-    // position: relative;
-    overflow: hidden;
-    width: 100px;
-    height: 100px; 
-   
+    position: relative;
+
 }
 
 .green-box {
 
     position: absolute;
     right: -100px;
-    width: 100px;
-    height: 109px;
+    width: 80px;
+    height: 80px;
     border-radius: 0 10px 10px 0;
     background: $tertiary-color;
     animation: green-box-go 1s forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
+
     // display: flex;
     // background-color: $tertiary-color;
     // width: 100px;
@@ -169,15 +168,21 @@ nav {
 
 
 .green-checkmark {
-    display: flex;
-    margin-top: 40px;
-    margin-right: 0px;
-    color: w;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-size: 25px;
+    color: white;
 }
 
 @keyframes green-box-go {
-    0% { right: -100px; }
-    100% {right: 100px;}
+    from {
+        right: 0;
+    }
+
+    to {
+        right: 3%;
+    }
 }
 
 
@@ -197,9 +202,9 @@ footer {
 
     header {
         position: relative;
-        
+
     }
-    
+
 
     .logo {
         position: absolute;
@@ -207,8 +212,8 @@ footer {
         height: 35px;
         display: flex;
         justify-content: center;
-       
-    
+
+
     }
 
     .menu-title {

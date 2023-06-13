@@ -142,35 +142,34 @@ nav {
 }
 
 .green-box-area {
-  overflow: hidden;
-  width: 100px;
-  height: 100px;
+  position: relative;
 }
 
 .green-box {
   position: absolute;
   right: -100px;
-  width: 100px;
-  height: 109px;
+  width: 80px;
+  height: 80px;
   border-radius: 0 10px 10px 0;
   background: #99E2D0;
   animation: green-box-go 1s forwards;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .green-checkmark {
-  display: flex;
-  margin-top: 40px;
-  margin-right: 0px;
-  color: w;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  font-size: 25px;
+  color: white;
 }
 
 @keyframes green-box-go {
-  0% {
-    right: -100px;
+  from {
+    right: 0;
   }
-  100% {
-    right: 100px;
+  to {
+    right: 3%;
   }
 }
 .explore-btn {
