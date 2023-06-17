@@ -81,36 +81,53 @@ nav {
 }
 
 .menu-item {
-  display: flex;
-  justify-content: space-between;
   overflow: hidden;
   background-color: #eff0f0;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
-  margin-left: -8px;
-  margin-right: 10px;
-  max-width: 370px;
+  max-width: 300px;
   min-width: 320px;
-  margin-top: 10px;
+  min-height: 80px;
 }
-.menu-item:hover .menu-checkmark {
+.menu-item p {
+  margin: 0;
+}
+.menu-item__price {
+  justify-content: flex-end;
+  width: 50px;
+  padding: 10px;
+}
+.menu-item__checkmark {
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
   width: 70px;
 }
-.menu-item:hover .dish-ingredients {
-  width: 250px;
+.menu-item__slider {
+  display: flex;
+  justify-content: space-between;
+  width: 370px;
 }
-.menu-item:hover {
-  opacity: 0.6;
-  box-shadow: 0px 5px 15px 0px rgba(158, 7, 7, 0.35);
-}
-
-.menu-dish {
-  display: inline;
-  font-size: 17px;
-  font-weight: 550;
-  white-space: nowrap;
+.menu-item__slider div {
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.menu-item:hover .menu-item__slider {
+  width: 320px;
+}
+.menu-item__description {
+  flex-basis: 100%;
+  justify-content: space-between;
+  padding: 10px;
+}
+.menu-item__description .menu-dish {
+  white-space: normal;
+}
+.menu-item .menu-ingredients {
+  white-space: nowrap;
 }
 
 .menu-ingredients {
@@ -139,37 +156,6 @@ nav {
   padding-right: 20px;
 }
 
-.green-box-area {
-  position: relative;
-}
-
-.green-box {
-  position: absolute;
-  right: -100px;
-  width: 80px;
-  height: 80px;
-  border-radius: 0 10px 10px 0;
-  background: #99E2D0;
-  animation: green-box-go 1s forwards;
-  animation-delay: 1s;
-}
-
-.green-checkmark {
-  position: absolute;
-  left: 30px;
-  top: 30px;
-  font-size: 25px;
-  color: white;
-}
-
-@keyframes green-box-go {
-  from {
-    right: 0;
-  }
-  to {
-    right: 3%;
-  }
-}
 .explore-btn {
   font-size: 23px;
   margin-top: 60px;
@@ -247,7 +233,7 @@ footer {
   }
 }
 .restaurants {
-  background-color: lightgray;
+  background-color: whitesmoke;
   margin-top: 130px;
   position: relative;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -348,21 +334,39 @@ footer {
 }
 
 .spinner-area {
-  position: relative;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: spinner-holder 0ms 3s forwards;
+}
+
+.spinner {
+  border: 16px solid blue;
+  background: rgba(170, 187, 97, 0.5);
+  border-top: 16px solid aqua;
+  border-radius: 50%;
+  animation: spinning 3s linear 1;
 }
 
 @keyframes spinning {
   0% {
     transform: rotate(0deg);
-    opacity: 1;
-    z-index: 1;
   }
   98% {
     transform: rotate(360deg);
-    opacity: 1;
   }
   100% {
-    transform: translate(1);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner-holder {
+  to {
+    transform: scale(0);
   }
 }
 .location {
@@ -372,7 +376,7 @@ footer {
   gap: 10px;
   height: 50px;
   background-color: #eaeaea;
-  box-shadow: inset 0 0 10px #cdc4b2;
+  box-shadow: inset 0px 15px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
 header {
@@ -388,7 +392,7 @@ nav {
 .logo {
   position: absolute;
   margin-top: 1px;
-  left: 90px;
+  left: 95px;
   display: flex;
   font-family: "shrikhand", cursive;
   font-size: 28px;
@@ -455,8 +459,8 @@ nav {
 }
 
 .instructions-title {
+  margin-bottom: 30px;
   margin-left: 30px;
-  margin-top: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 22px;
 }
@@ -496,7 +500,7 @@ nav {
 .instructions-btn__text {
   padding-left: 80px;
   position: absolute;
-  top: 20px;
+  top: 24px;
   font-size: 16px;
 }
 .instructions-btn__area {
@@ -514,11 +518,28 @@ a {
   text-decoration: none;
 }
 
+.new {
+  font-size: 12px;
+  padding-top: 5px;
+  margin-bottom: -20px;
+}
+
+.name-city {
+  font-size: 15px;
+}
+
+.empty-heart,
+.filled-heart {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
 @media (min-width: 769px) {
   .logo {
     font-size: 35px;
     background-color: white;
     justify-content: flex-end;
+    margin-left: 5px;
   }
   .location {
     position: relative;
@@ -564,17 +585,19 @@ a {
   }
   .instructions-btn__text {
     left: 40px;
-    font-size: x-large;
+    font-size: 20px;
   }
   .instructions-btn__step {
-    margin-left: 0;
+    position: absolute;
+    right: 490px;
   }
-  .instructions-btn__title {
-    margin-left: 290px;
-    font-size: 20px;
+  .instructions-title {
+    font-size: 24px;
+    left: 60px;
   }
   .restaurant-cardbox {
     gap: 50px;
+    background-color: whitesmoke;
   }
   footer ul {
     display: flex;
@@ -599,10 +622,10 @@ a {
     height: 35px;
     margin-top: 10px;
     background-color: white;
-    justify-content: center;
+    justify-content: flex-end;
   }
   .paris {
-    font-size: 24px;
+    font-size: 20px;
   }
   .top-of-the-art {
     font-size: 28px;
@@ -615,9 +638,10 @@ a {
   }
   .explore {
     width: 50%;
+    padding-bottom: 0;
   }
   .book-menu {
-    font-size: 30px;
+    font-size: 24px;
     padding-left: 0px;
     padding-top: 60px;
   }
@@ -635,12 +659,13 @@ a {
     width: 300px;
   }
   .instructions-title {
-    font-size: 28px;
-    padding-left: 2px;
+    font-size: 22px;
+    margin-left: 0;
+    margin-top: 0px;
   }
   .instructions-btn__area {
     display: flex;
-    padding-left: 110px;
+    padding-left: 0;
   }
   .instructions-btn {
     font-size: 26px;
@@ -649,6 +674,7 @@ a {
   .instructions-btn__step {
     position: absolute;
     right: 390px;
+    font-size: 18px;
   }
   .instructions-btn__text {
     font-size: 24px;
