@@ -8,21 +8,26 @@ header {
 }
 
 nav {
+    position: absolute;
     display: flex;
     justify-content: flex-start;
-    padding-left: 8px;
+
 }
 
 .logo {
     position: absolute;
-
+    left: 95px;
     height: 25px;
     display: flex;
     justify-content: center;
     width: 100%;
+    bottom: 50px;
 }
 
 .arrow {
+    position: absolute;
+    left: 20px;
+    top: 3px;
     font-size: 25px;
     color: black;
 
@@ -37,19 +42,17 @@ nav {
     width: 100%;
 }
 
+
 .menu {
     background-color: $light-grey;
     padding-left: 20px;
     border-radius: 50px 50px 0 0;
-    padding-bottom: 60px;
-    top: -65px;
+    margin-top: -65px;
     position: relative;
-
 
     &-checkmark {
         width: 0;
     }
-
 }
 
 .menu-title {
@@ -59,316 +62,9 @@ nav {
     font-weight: 400;
 }
 
-.section-name {
-    margin-bottom: 4px;
-}
-
-.underline {
-    border: 1px solid $tertiary-color;
-    width: 40px;
-
-}
-
-.menu-item {
-    // display: flex;
-    // justify-content: space-between;
-    overflow: hidden;
-    background-color: $xlight-gray;
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
-    border-radius: 10px;
-    // margin-left: -8px;
-    // margin-right: 10px;
-    max-width: 300px;
-    min-width: 320px;
-    // margin-top: 10px;
-    min-height: 80px;
-
-    p {
-        margin: 0;
-    }
-
-    // .menu-dish {
-    //     display: inline;
-    //     font-size: 17px;
-    //     font-weight: 550;
-    //     white-space: nowrap;
-    //     overflow: hidden;
-    //     text-overflow: ellipsis;
-    // }
-
-    &__price {
-        justify-content: flex-end;
-        width: 50px;
-        padding: 10px;
-    }
-
-    &__checkmark {
-        justify-content: center;
-        align-items: center;
-        background-color: $tertiary-color;
-        width: 70px;
-    }
-
-    &__slider {
-        display: flex;
-        justify-content: space-between;
-        width: 370px;
-
-        div {
-            min-height: 80px;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            
-        }
-    }
-
-    &:hover &__slider {
-        width: 320px;
-    }
-
-
-
-
-
-
-    &__description {
-        flex-basis: 100%;
-        justify-content: space-between;
-        padding: 10px;
-
-        .menu-dish {
-            white-space: normal;
-        }
-    }
-
-    .menu-ingredients {
-        white-space: nowrap;
-    }
-}
-
-
-
-
-
-
-.menu-ingredients {
-    font-size: 16px;
-    margin-top: -12px;
-    font-weight: normal;
-}
-
-.menu-dish,
-.menu-ingredients,
-.dish-ingredients {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-
-.dish-ingredients {
-    display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    width: 370px;
-}
-
-.menu-price {
-    padding-top: 29px;
-    padding-right: 20px;
-}
-
-
-.explore-btn {
-    font-size: 23px;
-    margin-top: 60px;
-    width: 300px;
-    height: 80px;
-    margin-left: 50px;
-}
-
-footer {
-    margin-top: -65px;
-}
-
-@media (min-width:769px) {
-
-    header {
-        position: relative;
-
-    }
-
-
-    .logo {
-        position: absolute;
-        top: 0;
-        height: 35px;
-        display: flex;
-        justify-content: center;
-
-
-    }
-
-    .menu-title {
-        font-size: 30px;
-        padding-left: 120px;
-    }
-
-    .section-name {
-        font-size: 22px;
-        padding-left: 120px;
-    }
-
-    .underline {
-        margin-left: 120px;
-        width: 60px;
-    }
-
-    .menu-item {
-        margin-left: 110px;
-        min-width: 380px;
-        max-width: 550px;
-    }
-
-    .menu-dish,
-    .menu-ingredients,
-    .menu-price {
-        font-size: 18px;
-    }
-
-    .explore-btn {
-        margin-left: 250px;
-    }
-
-    @media (min-width:993px) {
-
-        header {
-            // position: relative;
-        }
-
-        .arrow {
-            padding-left: 80px;
-            padding-top: 10px;
-        }
-
-        .logo {
-            margin-left: 180px;
-            height: 20px;
-        }
-
-        .section-name {
-            padding-left: 120px;
-        }
-
-        .underline {
-            margin-left: 120px;
-            width: 60px;
-        }
-
-        .menu-item {
-            min-width: 550px;
-            max-width: 950px;
-            margin-right: 140px;
-        }
-
-        .explore-btn {
-            margin-left: 300px;
-            width: 250px;
-            height: 60px;
-        }
-
-    }
-}
-
-
-.restaurants {
-    background-color: whitesmoke;
-    margin-top: 130px;
-    position: relative;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-    h2 {
-        font-size: 22px;
-        top: 40px;
-    }
-}
-
-
-.restaurant-title {
-    position: absolute;
-    left: 40px;
-    top: 30px;
-    font-weight: 600;
-}
-
-.restaurant-cardbox {
-    padding-top: 110px;
-    padding-bottom: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-
-
-.restaurant-cards {
-    background-color: white;
-    border-radius: 20px;
-    width: 290px;
-    height: 230px;
-    flex-direction: column;
-    position: relative;
-
-}
-
-.restaurant-cards:hover {
-    opacity: 0.4;
-}
-
-.new {
-    padding-top: 3px;
-    position: absolute;
-    background-color: $tertiary-color;
-    color: $green;
-    width: 70px;
-    height: 25px;
-    bottom: 195px;
-    left: 210px;
-    text-align: center;
-    font-weight: 600;
-    border-radius: 3px;
-}
-
-.restaurant-pic {
-    width: 290px;
-    height: 160px;
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-
-    &--offset {
-        object-position: 50% 60%;
-    }
-}
-
-
-.name-city {
-    line-height: 8px;
-    margin-left: 20px;
-    color: black;
-    position: relative;
-}
-
-.name {
-    font-weight: 800;
-}
-
 .empty-heart {
     position: absolute;
-    left: 230px;
-    bottom: 20px;
+    left: 300px;
     font-size: 30px;
     color: black;
 }
@@ -390,4 +86,365 @@ footer {
     background-color: linear-gradient(#FF79DA, #9356DC);
     opacity: 1;
 
+}
+
+.section-name {
+    margin-bottom: 4px;
+}
+
+.underline {
+    border: 1px solid $tertiary-color;
+    width: 40px;
+
+}
+
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: $xlight-gray;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    margin-left: -8px;
+    margin-right: 10px;
+    max-width: 300px;
+    min-width: 320px;
+    margin-top: 10px;
+    min-height: 80px;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-name: menu-item-fade;
+
+
+
+
+    p {
+        margin: 0;
+    }
+
+
+    &__price {
+        justify-content: flex-end;
+        width: 50px;
+        padding: 10px;
+    }
+
+    &__checkmark {
+        justify-content: center;
+        align-items: center;
+        background-color: $tertiary-color;
+        width: 70px;
+        animation: green-slider 3s forwards;
+    }
+
+    @keyframes green-slider {
+        0% {
+            color: transparent;
+            transform: translateX(100%);
+            transform-origin: right 0%;
+        }
+
+        100% {
+            margin-bottom: 0px;
+            transform: translateX(0);
+            transform-origin: left 100%;
+        }
+
+    }
+
+    .spinning-checkmark {
+        color: white;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-name: go-go-checkmark;
+        transition-delay: 1s;
+        transition-duration: 2s;
+    }
+
+    @keyframes go-go-checkmark {
+        0% {
+
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(450deg);
+
+        }
+    }
+
+
+    &__slider {
+        display: flex;
+        justify-content: space-between;
+        width: 372px;
+
+
+
+        div {
+            min-height: 80px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+    }
+
+    &:hover &__slider {
+        width: 320px;
+
+    }
+
+    &__description {
+        flex-basis: 100%;
+        justify-content: space-between;
+        padding: 10px;
+
+        .menu-dish {
+            white-space: normal;
+        }
+    }
+
+    .menu-ingredients {
+        white-space: nowrap;
+    }
+
+    .menu-ingredients {
+        font-size: 16px;
+        margin-top: -12px;
+        font-weight: normal;
+    }
+
+    .menu-dish,
+    .menu-ingredients,
+    .dish-ingredients {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+    .dish-ingredients {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        width: 370px;
+    }
+
+    .menu-price {
+        padding-top: 29px;
+        padding-right: 20px;
+    }
+
+
+    .explore-btn {
+        font-size: 23px;
+        margin-top: 60px;
+        width: 300px;
+        height: 80px;
+        margin-left: 50px;
+    }
+
+    // footer {
+    //     margin-top: -65px;
+    // }
+
+    @media (min-width:769px) {
+
+        header {
+            position: relative;
+        }
+
+
+        .logo {
+            position: absolute;
+            bottom: 30px;
+            height: 35px;
+
+        }
+
+        .menu-title {
+            font-size: 30px;
+            padding-left: 120px;
+        }
+
+        .section-name {
+            font-size: 22px;
+            padding-left: 120px;
+        }
+
+        .underline {
+            margin-left: 120px;
+            width: 60px;
+        }
+
+        .menu-item {
+            margin-left: 110px;
+            min-width: 380px;
+            max-width: 550px;
+        }
+
+        .menu-dish,
+        .menu-ingredients,
+        .menu-price {
+            font-size: 18px;
+        }
+
+        .explore-btn {
+            margin-left: 250px;
+        }
+
+        @media (min-width:993px) {
+
+            header {
+                position: relative;
+            }
+
+            .arrow {
+                padding-left: 80px;
+                padding-top: 10px;
+            }
+
+            .logo {
+                position: absolute;
+                margin-left: 180px;
+                height: 20px;
+                top: 30px;
+            }
+
+            .section-name {
+                padding-left: 120px;
+            }
+
+            .underline {
+                margin-left: 120px;
+                width: 60px;
+            }
+
+            .menu-item {
+                min-width: 550px;
+                max-width: 950px;
+                margin-right: 140px;
+            }
+
+            .explore-btn {
+                margin-left: 300px;
+                width: 250px;
+                height: 60px;
+            }
+
+        }
+    }
+
+
+    .restaurants {
+        background-color: whitesmoke;
+        margin-top: 130px;
+        position: relative;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        h2 {
+            font-size: 22px;
+            top: 40px;
+        }
+    }
+
+
+    .restaurant-title {
+        position: absolute;
+        left: 40px;
+        top: 30px;
+        font-weight: 600;
+    }
+
+    .restaurant-cardbox {
+        padding-top: 110px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+
+    .restaurant-cards {
+        background-color: white;
+        border-radius: 20px;
+        width: 290px;
+        height: 230px;
+        flex-direction: column;
+        position: relative;
+
+    }
+
+    .restaurant-cards:hover {
+        opacity: 0.4;
+    }
+
+    .new {
+        padding-top: 3px;
+        position: absolute;
+        background-color: $tertiary-color;
+        color: $green;
+        width: 70px;
+        height: 25px;
+        bottom: 195px;
+        left: 210px;
+        text-align: center;
+        font-weight: 600;
+        border-radius: 3px;
+    }
+
+    .restaurant-pic {
+        width: 290px;
+        height: 160px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+
+        &--offset {
+            object-position: 50% 60%;
+        }
+    }
+
+
+    .name-city {
+        line-height: 8px;
+        margin-left: 20px;
+        color: black;
+        position: relative;
+    }
+
+    .name {
+        font-weight: 800;
+    }
+
+    .empty-heart {
+        position: absolute;
+        left: 230px;
+        bottom: 20px;
+        font-size: 30px;
+        color: black;
+    }
+
+    .filled-heart {
+        position: absolute;
+        left: 230px;
+        bottom: 20px;
+        font-size: 30px;
+        opacity: 0;
+        background: linear-gradient(#FF79DA, #9356DC);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: opacity 500ms;
+    }
+
+    .filled-heart:hover {
+        background-color: linear-gradient(#FF79DA, #9356DC);
+        opacity: 1;
+
+    }
 }
