@@ -57,25 +57,24 @@
 
 
 header {
-  position: relative;
-  padding-bottom: 50px;
+  display: flex;
+  margin-top: 60px;
 }
 
 nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   // padding-left: 8px;
 }
 
 .logo {
-  position: absolute;
-  margin-top: 1px;
-  left: 95px;
+  
   display: flex;
   font-family: 'shrikhand', cursive;
   font-size: 28px;
   justify-content: center;
   width: 50%;
+  margin-bottom: -25px;
 }
 
 .search-pin {
@@ -136,7 +135,6 @@ nav {
 }
 
 .instructions {
-  position: relative;
   top: 60px;
 }
 
@@ -226,6 +224,11 @@ a {
   font-size: 20px;
   padding-bottom: 15px;
 }
+
+.restaurant-pic {
+  width: 300px;
+}
+
 
 @media (min-width:769px) {
 
@@ -321,6 +324,10 @@ a {
   .restaurant-cardbox {
     gap: 50px;
     background-color: whitesmoke;
+  }
+
+  .restaurant-pic {
+    display: flex;
   }
 
   footer {
