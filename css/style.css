@@ -271,7 +271,7 @@ nav {
 }
 @media (min-width: 769px) and (min-width: 993px) {
   .menu-item header {
-    position: relative;
+    background-color: aqua;
   }
   .menu-item .arrow {
     padding-left: 80px;
@@ -825,7 +825,7 @@ a {
     left: 20px;
   }
   h2 {
-    padding-left: 150px;
+    padding-left: 160px;
     padding-top: 20px;
     font-size: 30px;
   }
@@ -842,6 +842,9 @@ a {
   }
   .restaurant-cardbox {
     gap: 90px;
+  }
+  .restaurant-cards {
+    top: 30px;
   }
   .footer-header {
     font-size: 30px;
