@@ -9,12 +9,6 @@ header {
     position: relative;
 }
 
-nav {
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-
-}
 
 .logo {
     position: absolute;
@@ -23,7 +17,7 @@ nav {
     display: flex;
     justify-content: center;
     width: 100%;
-    bottom: 80px;
+    bottom: 70px;
 }
 
 .arrow {
@@ -49,7 +43,7 @@ nav {
 
 .menu {
     background-color: $light-grey;
-    padding-left: 20px;
+    padding-left: 40px;
     border-radius: 50px 50px 0 0;
     margin-top: -65px;
     position: relative;
@@ -68,6 +62,12 @@ nav {
     font-weight: 400;
 }
 
+.menu-cards {
+
+    justify-content: center;
+
+}
+
 .empty-heart,
 .filled-heart {
     position: absolute;
@@ -78,7 +78,7 @@ nav {
 
 
 .filled-heart {
-    // position: absolute;
+    position: absolute;
     margin-left: 280px;
     bottom: 20px;
     font-size: 30px;
@@ -244,16 +244,16 @@ nav {
 
 
     .explore-btn {
-    //    position: absolute;
-    //     font-size: 23px;
-    //     // margin-top: 60px;
-    //     width: 180px;
-    //     height: 80px;
-    font-size: 23px;
-    margin-top: 60px;
-    width: 300px;
-    height: 80px;
-    margin-left: 50px;
+        //    position: absolute;
+        //     font-size: 23px;
+        //     // margin-top: 60px;
+        //     width: 180px;
+        //     height: 80px;
+        font-size: 23px;
+        margin-top: 60px;
+        width: 300px;
+        height: 80px;
+        margin-left: 50px;
 
     }
 
@@ -324,7 +324,7 @@ nav {
         @media (min-width:993px) {
 
             header {
-               background-color: aqua;
+                background-color: aqua;
             }
 
             .arrow {
@@ -360,7 +360,7 @@ nav {
                 height: 60px;
             }
 
-          
+
 
         }
     }

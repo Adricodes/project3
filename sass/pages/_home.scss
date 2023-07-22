@@ -18,23 +18,23 @@
   border-top: 16px solid aqua;
   border-radius: 50%;
   animation: spinning 3s linear 1;
-  
+
 }
 
 @keyframes spinning {
   0% {
     transform: rotate(0deg);
-   
+
   }
 
   98% {
     transform: rotate(360deg);
-    
+
   }
 
   100% {
     transform: rotate(360deg);
-   
+
   }
 }
 
@@ -52,29 +52,27 @@
   gap: 10px;
   height: 50px;
   background-color: #eaeaea;
-  box-shadow: inset 0px 15px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 
 header {
   display: flex;
   margin-top: 60px;
+  justify-content: center;
+  align-items: center;
+
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  // padding-left: 8px;
-}
 
 .logo {
-  
-  display: flex;
+  flex-direction: row;
   font-family: 'shrikhand', cursive;
   font-size: 28px;
   justify-content: center;
-  width: 50%;
-  margin-bottom: -55px;
+  left: 0;
+  margin-bottom: -45px;
+
 }
 
 .search-pin {
@@ -97,6 +95,7 @@ nav {
   background-color: whitesmoke;
   padding-top: 20px;
   padding-bottom: 70px;
+
 }
 
 .book-menu {
@@ -128,9 +127,9 @@ nav {
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
 
   &:hover {
-    background: #dab4d5;
-    
-   
+    background-image: linear-gradient(lighten(#FF79DA, 3%), lighten(#9356DC, 3%));
+
+
   }
 }
 
@@ -149,12 +148,11 @@ nav {
 
 .instructions-btn {
   display: flex;
-  align-items: center;
+
   border-radius: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   width: 300px;
   height: 70px;
-  left: 40px;
   margin-top: 30px;
   position: relative;
   background-color: #eeeeee;
@@ -192,6 +190,8 @@ nav {
   &__area {
     display: flex;
     flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
   }
 
   &--highlighted {
@@ -229,6 +229,7 @@ a {
   color: black;
   position: relative;
 }
+
 .name {
   font-weight: 800;
 }
@@ -269,16 +270,19 @@ a {
   position: relative;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 .restaurants h2 {
   font-size: 22px;
   top: 40px;
 }
+
 .restaurant-title {
   position: absolute;
   left: 40px;
   top: 30px;
   font-weight: 600;
 }
+
 .restaurant-cardbox {
   padding-top: 110px;
   padding-bottom: 60px;
@@ -287,6 +291,7 @@ a {
   justify-content: center;
   gap: 20px;
 }
+
 .restaurant-cards {
   background-color: white;
   border-radius: 20px;
@@ -295,10 +300,11 @@ a {
   flex-direction: column;
   position: relative;
   left: 5px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.05);
 }
 
 .restaurant-cards:hover {
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 .restaurant-pic {
@@ -307,6 +313,7 @@ a {
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
+
 .restaurant-pic--offset {
   object-position: 50% 60%;
 }
@@ -319,7 +326,7 @@ a {
   .logo {
     font-size: 35px;
     background-color: white;
-    justify-content: flex-end;
+    justify-content: center;
     margin-left: 5px;
   }
 
@@ -358,14 +365,14 @@ a {
 
   .instructions-title {
     font-size: 10px;
-    margin-left: 160px;
+    margin-left: 110px;
     font-size: 30px;
   }
 
   .instructions-btn__area {
     display: flex;
     flex-direction: column;
-    padding-left: 110px;
+    align-items: center;
   }
 
   .instructions-btn {
@@ -386,7 +393,7 @@ a {
     &__step {
       position: absolute;
       right: 490px;
-   
+
     }
 
 
@@ -401,7 +408,7 @@ a {
   .restaurant-cardbox {
     gap: 70px;
   }
-  
+
 
   .restaurant-pic {
     display: flex;
@@ -432,15 +439,11 @@ a {
 @media (min-width:993px) {
 
 
-  header {
-    height: 70px;
-  }
-
   .logo {
     height: 35px;
     margin-top: 10px;
     background-color: white;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .paris {
@@ -462,7 +465,8 @@ a {
 
   .explore {
     width: 50%;
-   padding-bottom: 0;
+    padding-bottom: 0;
+    background-color: white;
   }
 
   .book-menu {
@@ -480,40 +484,51 @@ a {
   }
 
   .instructions {
-    width: 40%;
+    width: 50%;
 
   }
 
   .instructions-btn {
     width: 300px;
-  }
-
-  .instructions-title {
-    font-size: 22px;
-    margin-left: 0;
-    margin-top: 0px;
-  }
-
-  .instructions-btn__area {
-    display: flex;
-   padding-left: 0;
-
-  }
-
-  .instructions-btn {
     font-size: 26px;
     margin-top: 40px;
+  
+
+  &__icon {
+   
+    padding-left: 20px;
+    top: 25px;
+    color: $dark-grey;
   }
 
-  .instructions-btn__step {
+  &--highlighted {
+    color: $primary-color;
+  }
+
+  &__area {
+    display: flex;
+    padding-left: 40px;
+    gap: 0;
+  }
+
+  &__step {
     position: absolute;
     right: 390px;
     font-size: 18px;
   }
 
-  .instructions-btn__text {
+  &__text {
     font-size: 24px;
     left: 20px;
+  }
+
+}
+
+  .instructions-title {
+    font-size: 24px;
+    margin-left: 0;
+    margin-top: 60px;
+    padding-top: 40px;
   }
 
 
@@ -533,19 +548,19 @@ a {
 
     h2 {
       font-size: 30px;
-      top: 20px;
-      left: -25px;
+      top: -10px;
+      
     }
   }
 
-.restaurant-cardbox {
-  gap: 90px;
-}
+  .restaurant-cardbox {
+    gap: 110px;
+  }
 
 
-.restaurant-cards {
-  top: 30px;
-}
+  .restaurant-cards {
+    top: 30px;
+  }
 
 
 

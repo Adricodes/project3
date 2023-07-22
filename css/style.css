@@ -26,12 +26,6 @@ header {
   position: relative;
 }
 
-nav {
-  position: absolute;
-  display: flex;
-  justify-content: flex-start;
-}
-
 .logo {
   position: absolute;
   left: 95px;
@@ -39,7 +33,7 @@ nav {
   display: flex;
   justify-content: center;
   width: 100%;
-  bottom: 80px;
+  bottom: 70px;
 }
 
 .arrow {
@@ -61,7 +55,7 @@ nav {
 
 .menu {
   background-color: #e5e6e7;
-  padding-left: 20px;
+  padding-left: 40px;
   border-radius: 50px 50px 0 0;
   margin-top: -65px;
   position: relative;
@@ -78,6 +72,10 @@ nav {
   font-weight: 400;
 }
 
+.menu-cards {
+  justify-content: center;
+}
+
 .empty-heart,
 .filled-heart {
   position: absolute;
@@ -87,6 +85,7 @@ nav {
 }
 
 .filled-heart {
+  position: absolute;
   margin-left: 280px;
   bottom: 20px;
   font-size: 30px;
@@ -435,26 +434,23 @@ nav {
   gap: 10px;
   height: 50px;
   background-color: #eaeaea;
-  box-shadow: inset 0px 15px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 header {
   display: flex;
   margin-top: 60px;
-}
-
-nav {
-  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .logo {
-  display: flex;
+  flex-direction: row;
   font-family: "shrikhand", cursive;
   font-size: 28px;
   justify-content: center;
-  width: 50%;
-  margin-bottom: -55px;
+  left: 0;
+  margin-bottom: -45px;
 }
 
 .search-pin {
@@ -507,7 +503,7 @@ nav {
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
 }
 .explore-btn:hover {
-  background: #dab4d5;
+  background-image: linear-gradient(#ff88de, #9b63df);
 }
 
 .instructions {
@@ -523,12 +519,10 @@ nav {
 
 .instructions-btn {
   display: flex;
-  align-items: center;
   border-radius: 20px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 300px;
   height: 70px;
-  left: 40px;
   margin-top: 30px;
   position: relative;
   background-color: #eeeeee;
@@ -562,6 +556,8 @@ nav {
 .instructions-btn__area {
   display: flex;
   flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
 }
 .instructions-btn--highlighted {
   color: #9356DC;
@@ -663,10 +659,11 @@ a {
   flex-direction: column;
   position: relative;
   left: 5px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.05);
 }
 
 .restaurant-cards:hover {
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 .restaurant-pic {
@@ -684,7 +681,7 @@ a {
   .logo {
     font-size: 35px;
     background-color: white;
-    justify-content: flex-end;
+    justify-content: center;
     margin-left: 5px;
   }
   .location {
@@ -712,13 +709,13 @@ a {
   }
   .instructions-title {
     font-size: 10px;
-    margin-left: 160px;
+    margin-left: 110px;
     font-size: 30px;
   }
   .instructions-btn__area {
     display: flex;
     flex-direction: column;
-    padding-left: 110px;
+    align-items: center;
   }
   .instructions-btn {
     font-size: medium;
@@ -759,14 +756,11 @@ a {
   }
 }
 @media (min-width: 993px) {
-  header {
-    height: 70px;
-  }
   .logo {
     height: 35px;
     margin-top: 10px;
     background-color: white;
-    justify-content: flex-end;
+    justify-content: center;
   }
   .paris {
     font-size: 20px;
@@ -783,6 +777,7 @@ a {
   .explore {
     width: 50%;
     padding-bottom: 0;
+    background-color: white;
   }
   .book-menu {
     font-size: 24px;
@@ -797,23 +792,25 @@ a {
     margin-left: 0;
   }
   .instructions {
-    width: 40%;
+    width: 50%;
   }
   .instructions-btn {
     width: 300px;
+    font-size: 26px;
+    margin-top: 40px;
   }
-  .instructions-title {
-    font-size: 22px;
-    margin-left: 0;
-    margin-top: 0px;
+  .instructions-btn__icon {
+    padding-left: 20px;
+    top: 25px;
+    color: #46474a;
+  }
+  .instructions-btn--highlighted {
+    color: #9356DC;
   }
   .instructions-btn__area {
     display: flex;
-    padding-left: 0;
-  }
-  .instructions-btn {
-    font-size: 26px;
-    margin-top: 40px;
+    padding-left: 40px;
+    gap: 0;
   }
   .instructions-btn__step {
     position: absolute;
@@ -823,6 +820,12 @@ a {
   .instructions-btn__text {
     font-size: 24px;
     left: 20px;
+  }
+  .instructions-title {
+    font-size: 24px;
+    margin-left: 0;
+    margin-top: 60px;
+    padding-top: 40px;
   }
   h2 {
     padding-left: 160px;
@@ -837,11 +840,10 @@ a {
   }
   .restaurants h2 {
     font-size: 30px;
-    top: 20px;
-    left: -25px;
+    top: -10px;
   }
   .restaurant-cardbox {
-    gap: 90px;
+    gap: 110px;
   }
   .restaurant-cards {
     top: 30px;
