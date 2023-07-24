@@ -118,7 +118,7 @@ header {
   background-color: #eff0f0;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
-  margin-left: -8px;
+  margin-left: -18px;
   margin-right: 10px;
   max-width: 300px;
   min-width: 320px;
@@ -214,12 +214,18 @@ header {
   padding-top: 29px;
   padding-right: 20px;
 }
+.menu-item order-btn {
+  display: flex;
+}
 .menu-item .explore-btn {
+  display: flex;
   font-size: 23px;
   margin-top: 60px;
   width: 300px;
   height: 80px;
   margin-left: 50px;
+  justify-content: center;
+  align-items: center;
 }
 .menu-item footer {
   padding-left: 0;
