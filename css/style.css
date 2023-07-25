@@ -72,8 +72,15 @@ header {
   font-weight: 400;
 }
 
+.menu-group {
+  padding: 10px;
+}
+
 .menu-cards {
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .empty-heart,
@@ -118,8 +125,6 @@ header {
   background-color: #eff0f0;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
   border-radius: 10px;
-  margin-left: -18px;
-  margin-right: 10px;
   max-width: 300px;
   min-width: 320px;
   margin-top: 10px;
@@ -393,6 +398,12 @@ header {
 .menu-item .filled-heart:hover {
   background-color: linear-gradient(#FF79DA, #9356DC);
   opacity: 1;
+}
+
+.order-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .spinner-area {
