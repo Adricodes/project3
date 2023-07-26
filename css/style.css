@@ -55,7 +55,7 @@ header {
 
 .menu {
   background-color: #e5e6e7;
-  padding-left: 40px;
+  padding-left: 0;
   border-radius: 50px 50px 0 0;
   margin-top: -65px;
   position: relative;
@@ -66,10 +66,17 @@ header {
 }
 
 .menu-title {
+  display: flex;
+}
+
+.title {
+  justify-content: start;
+  width: 100%;
   font-size: 28px;
   padding-top: 30px;
   font-family: "shrikhand", cursive;
   font-weight: 400;
+  padding-left: 30px;
 }
 
 .menu-group {
@@ -83,18 +90,20 @@ header {
   width: 100%;
 }
 
-.empty-heart,
-.filled-heart {
-  position: absolute;
-  padding-left: 300px;
+.hearts {
+  display: flex;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.empty-heart {
+  margin-left: 80px;
+  padding-bottom: 117px;
   font-size: 30px;
   color: black;
 }
 
 .filled-heart {
-  position: absolute;
-  margin-left: 280px;
-  bottom: 20px;
   font-size: 30px;
   opacity: 0;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -376,28 +385,6 @@ header {
 }
 .menu-item .name {
   font-weight: 800;
-}
-.menu-item .empty-heart {
-  position: absolute;
-  left: 230px;
-  bottom: 20px;
-  font-size: 30px;
-  color: black;
-}
-.menu-item .filled-heart {
-  position: absolute;
-  left: 230px;
-  bottom: 20px;
-  font-size: 30px;
-  opacity: 0;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: opacity 500ms;
-}
-.menu-item .filled-heart:hover {
-  background-color: linear-gradient(#FF79DA, #9356DC);
-  opacity: 1;
 }
 
 .order-btn {
