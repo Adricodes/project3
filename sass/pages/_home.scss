@@ -236,8 +236,8 @@ a {
 
 .empty-heart {
   position: absolute;
-  left: 230px;
-  bottom: 20px;
+  left: 160px;
+  top: 170px;
   font-size: 30px;
   color: black;
   padding-left: 0;
@@ -245,10 +245,8 @@ a {
 
 .filled-heart {
   position: absolute;
-  left: 230px;
-  margin-left: 0;
-  padding-left: 0;
-  // bottom: 20px;
+  left: 240px;
+  bottom: 24.5px;
   font-size: 30px;
   opacity: 0;
   background: linear-gradient(#FF79DA, #9356DC);
