@@ -58,20 +58,20 @@
 
 header {
   display: flex;
-  margin-top: 60px;
+  height: 40px;
   justify-content: center;
   align-items: center;
 
 }
 
 
-.logo {
-  flex-direction: row;
+.home-logo {
+  
   font-family: 'shrikhand', cursive;
   font-size: 28px;
   justify-content: center;
-  left: 0;
-  margin-bottom: -45px;
+  padding-bottom: 10px;
+  
 
 }
 
@@ -236,8 +236,6 @@ a {
 
 .empty-heart {
   position: absolute;
-  left: 160px;
-  top: 170px;
   font-size: 30px;
   color: black;
   padding-left: 0;
@@ -245,8 +243,8 @@ a {
 
 .filled-heart {
   position: absolute;
-  left: 240px;
-  bottom: 24.5px;
+  // left: 160px;
+  // top: 170px;
   font-size: 30px;
   opacity: 0;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -254,11 +252,17 @@ a {
   -webkit-background-clip: text;
   color: transparent;
   transition: opacity 500ms;
+
+  &:hover {
+    background-color: linear-gradient(#FF79DA, #9356DC);
+    opacity: 1;
+  }
 }
 
-.filled-heart:hover {
-  background-color: linear-gradient(#FF79DA, #9356DC);
-  opacity: 1;
+.empty-heart,
+.filled-heart {
+  left: 250px;
+  top: 50px;
 }
 
 
@@ -295,14 +299,18 @@ a {
   border-radius: 20px;
   width: 290px;
   height: 230px;
-  flex-direction: column;
-  position: relative;
-  left: 5px;
+  // flex-direction: column;
+  // position: relative;
+  // left: 5px;
   box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.05);
 }
 
 .restaurant-cards:hover {
   opacity: 0.7;
+}
+
+.restaurant-card {
+  position: relative;
 }
 
 .restaurant-pic {
@@ -321,7 +329,7 @@ a {
 @media (min-width:769px) {
 
 
-  .logo {
+  .home-logo {
     font-size: 35px;
     background-color: white;
     justify-content: center;
@@ -437,9 +445,9 @@ a {
 @media (min-width:993px) {
 
 
-  .logo {
+  .home-logo {
     height: 35px;
-    margin-top: 10px;
+    padding-bottom: 55px;
     background-color: white;
     justify-content: center;
   }
@@ -490,37 +498,37 @@ a {
     width: 300px;
     font-size: 26px;
     margin-top: 40px;
-  
 
-  &__icon {
-   
-    padding-left: 20px;
-    top: 25px;
-    color: $dark-grey;
+
+    &__icon {
+
+      padding-left: 20px;
+      top: 25px;
+      color: $dark-grey;
+    }
+
+    &--highlighted {
+      color: $primary-color;
+    }
+
+    &__area {
+      display: flex;
+      padding-left: 40px;
+      gap: 0;
+    }
+
+    &__step {
+      position: absolute;
+      right: 390px;
+      font-size: 18px;
+    }
+
+    &__text {
+      font-size: 24px;
+      left: 20px;
+    }
+
   }
-
-  &--highlighted {
-    color: $primary-color;
-  }
-
-  &__area {
-    display: flex;
-    padding-left: 40px;
-    gap: 0;
-  }
-
-  &__step {
-    position: absolute;
-    right: 390px;
-    font-size: 18px;
-  }
-
-  &__text {
-    font-size: 24px;
-    left: 20px;
-  }
-
-}
 
   .instructions-title {
     font-size: 24px;
@@ -547,7 +555,7 @@ a {
     h2 {
       font-size: 30px;
       top: -10px;
-      
+
     }
   }
 

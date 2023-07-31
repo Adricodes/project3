@@ -10,14 +10,16 @@ header {
 }
 
 
-.logo {
-    position: absolute;
-    left: 95px;
+.logo-bastille {
+    // position: absolute;
+    // left: 95px;
+    display: flex;
     height: 25px;
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    align-items: end;
     width: 100%;
-    bottom: 70px;
+    bottom: 95px;
 }
 
 .arrow {
@@ -72,51 +74,18 @@ header {
 
 .menu-group {
     padding: 10px;
+     
 }
+
+
 
 .menu-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-}
-
-.hearts {
-    display: flex;
-    padding-left: 50px;
-    padding-bottom: 10px;
   
 }
-
-.empty-heart {
-    
-    margin-left: 80px;
-    padding-bottom: 117px;
-    // left: 300px;
-    font-size: 30px;
-    color: black;
-  }
-  
-  .filled-heart {
-
-    
-    // position: absolute;
-    // left: 230px;
-    // bottom: 20px;
-    font-size: 30px;
-    opacity: 0;
-    background: linear-gradient(#FF79DA, #9356DC);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    transition: opacity 500ms;
-  }
-
-  
-  .filled-heart:hover {
-    background-color: linear-gradient(#FF79DA, #9356DC);
-    opacity: 1;
-  }
 
 
 .section-name {
@@ -141,13 +110,15 @@ header {
     min-width: 320px;
     margin-top: 10px;
     min-height: 80px;
-    animation-name: cards-fading;
     cursor: pointer;
+    animation: cards-fading 6000ms;
+   
 
 
     p {
         margin: 0;
     }
+
 
     &__price {
         justify-content: flex-end;
@@ -160,25 +131,28 @@ header {
         align-items: center;
         background-color: $tertiary-color;
         width: 70px;
-        animation: green-slider 3s forwards;
+        // animation: green-slider 3s forwards;
 
     }
 
-    @keyframes green-slider {
-        0% {
-            color: transparent;
-            transform: translateX(100%);
-            transform-origin: right 0%;
-        }
 
-        100% {
-            margin-bottom: 0px;
-            transform: translateX(0);
-            transform-origin: left 100%;
+@keyframes cards-fading {
 
-        }
-
+    0% {
+        opacity: 0;
+        transform: translateY(-30);
+        
+      
     }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+       
+       
+    }
+}
+
 
     .spinning-checkmark {
         color: white;
@@ -198,7 +172,6 @@ header {
         width: 372px;
 
 
-
         div {
             min-height: 80px;
             display: flex;
@@ -211,6 +184,8 @@ header {
 
     &:hover &__slider {
         width: 320px;
+        transition: width 900ms;
+
 
         .spinning-checkmark {
             animation: go-go-checkmark 900ms forwards;
@@ -262,7 +237,7 @@ header {
 
     order-btn {
         display: flex;
-       
+
     }
 
     .explore-btn {
@@ -274,7 +249,7 @@ header {
         margin-left: 50px;
         justify-content: center;
         align-items: center;
-        
+
     }
 
 
@@ -305,8 +280,9 @@ header {
 
         .logo {
             position: absolute;
-            bottom: 30px;
-            height: 35px;
+            bottom: 10px;
+            height: 45px;
+            font-size: 24px;
 
         }
 
@@ -352,12 +328,12 @@ header {
                 padding-top: 10px;
             }
 
-            .logo {
-                position: absolute;
-                margin-left: 180px;
-                height: 20px;
-                top: 30px;
-            }
+            // .logo {
+            //     position: absolute;
+            //     margin-left: 180px;
+            //     height: 20px;
+            //     top: 30px;
+            // }
 
             .section-name {
                 padding-left: 120px;
