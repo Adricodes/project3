@@ -22,18 +22,14 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
-  position: relative;
-}
-
-.logo-bastille {
+.logo {
   display: flex;
-  height: 25px;
-  display: flex;
-  justify-content: end;
-  align-items: end;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  font-family: "shrikhand", cursive;
+  font-size: 28px;
   width: 100%;
-  bottom: 95px;
 }
 
 .arrow {
@@ -53,13 +49,26 @@ header {
   object-fit: cover;
 }
 
+.new {
+  position: relative;
+  padding-top: 3px;
+  left: 20px;
+  top: -105px;
+  background-color: #99E2D0;
+  color: #1e7c2f;
+  width: 70px;
+  height: 25px;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
 .menu {
   background-color: #e5e6e7;
   padding-left: 0;
   border-radius: 50px 50px 0 0;
   margin-top: -65px;
   position: relative;
-  padding-bottom: 80px;
 }
 .menu-checkmark {
   width: 0;
@@ -73,7 +82,7 @@ header {
   justify-content: start;
   width: 100%;
   font-size: 28px;
-  padding-top: 30px;
+  padding-top: 0px;
   font-family: "shrikhand", cursive;
   font-weight: 400;
   padding-left: 30px;
@@ -91,7 +100,7 @@ header {
 }
 
 .section-name {
-  margin-bottom: 4px;
+  margin-bottom: -10px;
 }
 
 .underline {
@@ -111,7 +120,9 @@ header {
   margin-top: 10px;
   min-height: 80px;
   cursor: pointer;
-  animation: cards-fading 6000ms;
+  animation: cards-fading 2000ms forwards;
+  transform: translateY(30px);
+  opacity: 0;
 }
 .menu-item p {
   margin: 0;
@@ -127,28 +138,14 @@ header {
   background-color: #99E2D0;
   width: 70px;
 }
-@keyframes cards-fading {
-  0% {
-    opacity: 0;
-    transform: translateY(-30);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .menu-item .spinning-checkmark {
   color: white;
-}
-@keyframes go-go-checkmark {
-  100% {
-    transform: rotate(360deg);
-  }
 }
 .menu-item__slider {
   display: flex;
   justify-content: space-between;
   width: 372px;
+  transition: width 900ms;
 }
 .menu-item__slider div {
   min-height: 80px;
@@ -159,7 +156,6 @@ header {
 }
 .menu-item:hover .menu-item__slider {
   width: 320px;
-  transition: width 900ms;
 }
 .menu-item:hover .menu-item__slider .spinning-checkmark {
   animation: go-go-checkmark 900ms forwards;
@@ -198,21 +194,9 @@ header {
   padding-top: 29px;
   padding-right: 20px;
 }
-.menu-item order-btn {
-  display: flex;
-}
-.menu-item .explore-btn {
-  display: flex;
-  font-size: 23px;
-  margin-top: 60px;
-  width: 300px;
-  height: 80px;
-  margin-left: 50px;
-  justify-content: center;
-  align-items: center;
-}
 .menu-item footer {
   padding-left: 0;
+  padding-bottom: 10px;
 }
 .menu-item ul {
   display: flex;
@@ -224,12 +208,8 @@ header {
   width: 220px;
 }
 @media (min-width: 769px) {
-  .menu-item header {
-    position: relative;
-  }
   .menu-item .logo {
-    position: absolute;
-    bottom: 10px;
+    padding-left: 10px;
     height: 45px;
     font-size: 24px;
   }
@@ -237,23 +217,15 @@ header {
     font-size: 30px;
     padding-left: 120px;
   }
-  .menu-item .section-name {
-    font-size: 22px;
-    padding-left: 120px;
-  }
+  .menu-item .section-name,
   .menu-item .underline {
-    margin-left: 120px;
-    width: 60px;
+    font-size: 22px;
+    margin-left: 20px;
   }
   .menu-item .menu-item {
     margin-left: 110px;
     min-width: 380px;
     max-width: 550px;
-  }
-  .menu-item .menu-dish,
-  .menu-item .menu-ingredients,
-  .menu-item .menu-price {
-    font-size: 18px;
   }
   .menu-item .explore-btn {
     margin-left: 250px;
@@ -320,19 +292,6 @@ header {
 .menu-item .restaurant-cards:hover {
   opacity: 0.4;
 }
-.menu-item .new {
-  padding-top: 3px;
-  position: absolute;
-  background-color: #99E2D0;
-  color: #1e7c2f;
-  width: 70px;
-  height: 25px;
-  bottom: 195px;
-  left: 210px;
-  text-align: center;
-  font-weight: 600;
-  border-radius: 3px;
-}
 .menu-item .restaurant-pic {
   width: 290px;
   height: 160px;
@@ -352,10 +311,32 @@ header {
   font-weight: 800;
 }
 
+.delay-card-second {
+  animation: cards-fading 2000ms 500ms forwards;
+}
+.delay-card-third {
+  animation: cards-fading 2000ms 1000ms forwards;
+}
+
+@keyframes go-go-checkmark {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes cards-fading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .order-btn {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 25px;
 }
 
 .spinner-area {
@@ -449,11 +430,13 @@ header {
 }
 
 .top-of-the-art {
-  font-size: 20px;
+  font-size: 18px;
   color: #7f8387;
   font-weight: 200;
   font-family: "Open sans", sans-serif;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .explore-btn {
@@ -523,7 +506,6 @@ header {
 .instructions-btn__area {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
   justify-content: center;
 }
 .instructions-btn--highlighted {
@@ -544,8 +526,7 @@ a {
   color: #1e7c2f;
   width: 70px;
   height: 25px;
-  bottom: 195px;
-  left: 210px;
+  left: 205px;
   text-align: center;
   font-weight: 600;
   border-radius: 3px;
@@ -556,6 +537,7 @@ a {
   margin-left: 20px;
   color: black;
   position: relative;
+  font-size: 16px;
 }
 
 .name {
@@ -587,7 +569,9 @@ a {
 .empty-heart,
 .filled-heart {
   left: 250px;
-  top: 50px;
+  top: 30px;
+  font-size: 26px;
+  font-weight: 100;
 }
 
 .restaurants {
@@ -598,7 +582,7 @@ a {
 }
 
 .restaurants h2 {
-  font-size: 22px;
+  font-size: 24px;
   top: 40px;
 }
 
@@ -726,7 +710,7 @@ a {
 @media (min-width: 993px) {
   .home-logo {
     height: 35px;
-    padding-bottom: 55px;
+    margin-top: 10px;
     background-color: white;
     justify-content: center;
   }

@@ -5,21 +5,20 @@ body {
     // padding-right: 0px;
 }
 
-header {
-    position: relative;
-}
+// header {
+//     position: relative;
+// }
 
 
-.logo-bastille {
-    // position: absolute;
-    // left: 95px;
+.logo {
     display: flex;
-    height: 25px;
-    display: flex;
-    justify-content: end;
-    align-items: end;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'shrikhand', cursive;
+    font-size: 28px;
     width: 100%;
-    bottom: 95px;
+
 }
 
 .arrow {
@@ -42,6 +41,20 @@ header {
     object-fit: cover;
 }
 
+.new {
+    position: relative;
+    padding-top: 3px;
+    left: 20px;
+    top: -105px;
+    background-color: $tertiary-color;
+    color: $green;
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
 
 .menu {
     background-color: $light-grey;
@@ -49,7 +62,7 @@ header {
     border-radius: 50px 50px 0 0;
     margin-top: -65px;
     position: relative;
-    padding-bottom: 80px;
+
 
     &-checkmark {
         width: 0;
@@ -65,7 +78,7 @@ header {
     justify-content: start;
     width: 100%;
     font-size: 28px;
-    padding-top: 30px;
+    padding-top: 0px;
     font-family: 'shrikhand', cursive;
     font-weight: 400;
     padding-left: 30px;
@@ -74,7 +87,7 @@ header {
 
 .menu-group {
     padding: 10px;
-     
+
 }
 
 
@@ -84,12 +97,12 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-  
+
 }
 
 
 .section-name {
-    margin-bottom: 4px;
+    margin-bottom: -10px;
 }
 
 .underline {
@@ -111,8 +124,9 @@ header {
     margin-top: 10px;
     min-height: 80px;
     cursor: pointer;
-    animation: cards-fading 6000ms;
-   
+    animation: cards-fading 2000ms forwards;
+    transform: translateY(30px);
+    opacity: 0;
 
 
     p {
@@ -136,22 +150,6 @@ header {
     }
 
 
-@keyframes cards-fading {
-
-    0% {
-        opacity: 0;
-        transform: translateY(-30);
-        
-      
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-       
-       
-    }
-}
 
 
     .spinning-checkmark {
@@ -159,17 +157,13 @@ header {
 
     }
 
-    @keyframes go-go-checkmark {
-        100% {
-            transform: rotate(360deg);
-        }
-    }
 
 
     &__slider {
         display: flex;
         justify-content: space-between;
         width: 372px;
+        transition: width 900ms;
 
 
         div {
@@ -184,7 +178,7 @@ header {
 
     &:hover &__slider {
         width: 320px;
-        transition: width 900ms;
+
 
 
         .spinning-checkmark {
@@ -235,28 +229,18 @@ header {
         padding-right: 20px;
     }
 
-    order-btn {
-        display: flex;
+    // .order-btn {
+    //     display: flex;
+    // }
 
-    }
-
-    .explore-btn {
-        display: flex;
-        font-size: 23px;
-        margin-top: 60px;
-        width: 300px;
-        height: 80px;
-        margin-left: 50px;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-
+    // .explore-btn {
+    //     margin-left: ;
+    // }
 
 
     footer {
         padding-left: 0;
+        padding-bottom: 10px;
 
     }
 
@@ -273,14 +257,14 @@ header {
 
     @media (min-width:769px) {
 
-        header {
-            position: relative;
-        }
+        // header {
+        //     position: relative;
+        // }
 
 
         .logo {
-            position: absolute;
-            bottom: 10px;
+            // position: absolute;
+            padding-left: 10px;
             height: 45px;
             font-size: 24px;
 
@@ -291,30 +275,27 @@ header {
             padding-left: 120px;
         }
 
-        .section-name {
+        .section-name,
+        .underline {
             font-size: 22px;
-            padding-left: 120px;
+            margin-left: 20px;
         }
 
-        .underline {
-            margin-left: 120px;
-            width: 60px;
-        }
+        // .underline {
+        //     margin-left: 120px;
+        //     width: 60px;
+        // }
 
         .menu-item {
             margin-left: 110px;
             min-width: 380px;
             max-width: 550px;
-        }
 
-        .menu-dish,
-        .menu-ingredients,
-        .menu-price {
-            font-size: 18px;
         }
 
         .explore-btn {
             margin-left: 250px;
+
         }
 
         @media (min-width:993px) {
@@ -409,19 +390,19 @@ header {
         opacity: 0.4;
     }
 
-    .new {
-        padding-top: 3px;
-        position: absolute;
-        background-color: $tertiary-color;
-        color: $green;
-        width: 70px;
-        height: 25px;
-        bottom: 195px;
-        left: 210px;
-        text-align: center;
-        font-weight: 600;
-        border-radius: 3px;
-    }
+    // .new {
+    //     padding-top: 3px;
+    //     position: absolute;
+    //     background-color: $tertiary-color;
+    //     color: $green;
+    //     width: 70px;
+    //     height: 25px;
+    //     bottom: 195px;
+    //     left: 210px;
+    //     text-align: center;
+    //     font-weight: 600;
+    //     border-radius: 3px;
+    // }
 
     .restaurant-pic {
         width: 290px;
@@ -474,8 +455,44 @@ header {
     // }
 }
 
+.delay-card{
+
+    &-second{
+        animation: cards-fading 2000ms 500ms forwards;
+    }
+
+    &-third{
+        animation: cards-fading 2000ms 1000ms forwards;
+    }
+}
+
+@keyframes go-go-checkmark {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cards-fading {
+
+    0% {
+        opacity: 0;
+       
+
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        
+
+
+    }
+}
+
 .order-btn {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-bottom: 25px;
 }
