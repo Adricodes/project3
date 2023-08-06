@@ -22,6 +22,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header {
+  display: flex;
+}
+
 .logo {
   display: flex;
   height: 45px;
@@ -29,7 +33,19 @@ body {
   align-items: center;
   font-family: "shrikhand", cursive;
   font-size: 28px;
-  width: 100%;
+  width: 70%;
+}
+
+.arrow {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  font-size: 25px;
+  color: black;
+  width: 30%;
+}
+.arrow :hover {
+  opacity: 0.6;
 }
 
 .bastille-pic {
@@ -39,22 +55,23 @@ body {
 }
 
 .heart-area {
-  display: flex;
+  position: relative;
+  right: 330px;
 }
 
 .empty-heart {
   position: absolute;
-  left: 100px;
+  left: 0;
   font-size: 30px;
   color: black;
 }
 
 .filled-heart {
   position: absolute;
-  left: 200px;
+  left: 0;
   font-size: 30px;
   opacity: 0;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background-color: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -62,7 +79,7 @@ body {
 }
 
 .filled-heart:hover {
-  background-color: linear-gradient(#FF79DA, #9356DC);
+  background-color: linear-gradient #FF79DA, #9356DC;
   opacity: 1;
 }
 
@@ -118,7 +135,7 @@ body {
 }
 
 .section-name {
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   margin-left: 20px;
 }
 
@@ -222,8 +239,27 @@ body {
   padding-top: 29px;
   padding-right: 20px;
 }
+.menu-item .order-btn {
+  display: flex;
+  padding-top: 50px;
+}
+.menu-item .explore-btn {
+  display: flex;
+  margin-top: 140px;
+  width: 230px;
+  height: 50px;
+  font-size: 17px;
+  border-radius: 30px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+.menu-item .explore-btn:hover {
+  background-image: linear-gradient(#ff88de, #9b63df);
+}
 .menu-item footer {
-  padding-left: 0;
   padding-bottom: 10px;
 }
 .menu-item ul {
@@ -283,6 +319,7 @@ body {
     margin-left: 300px;
     width: 250px;
     height: 60px;
+    margin-top: 30px;
   }
 }
 .menu-item .restaurants {

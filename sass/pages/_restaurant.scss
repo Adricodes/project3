@@ -5,9 +5,9 @@ body {
     // padding-right: 0px;
 }
 
-// header {
-//     position: relative;
-// }
+header {
+    display: flex;
+}
 
 
 .logo {
@@ -17,23 +17,24 @@ body {
     align-items: center;
     font-family: 'shrikhand', cursive;
     font-size: 28px;
-    width: 100%;
+    width: 70%;
 
 }
 
-// .arrow {
-//     position: absolute;
-//     left: 20px;
-//     top: -23px;
-//     font-size: 25px;
-//     color: black;
+.arrow {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 25px;
+    color: black;
+    width: 30%;
 
 
-//     :hover {
-//         opacity: 0.6;
+    :hover {
+        opacity: 0.6;
 
-//     }
-// }
+    }
+}
 
 .bastille-pic {
     width: 100%;
@@ -42,24 +43,23 @@ body {
 }
 
 .heart-area {
-    display: flex;
+    position: relative;
+    right: 330px;
 }
 
 .empty-heart {
     position: absolute;
-
-    left: 100px;
+    left: 0;
     font-size: 30px;
     color: black;
 }
 
 .filled-heart {
     position: absolute;
-
-    left: 200px;
+    left: 0;
     font-size: 30px;
     opacity: 0;
-    background: linear-gradient(#FF79DA, #9356DC);
+    background-color: linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -67,11 +67,9 @@ body {
 }
 
 .filled-heart:hover {
-    background-color: linear-gradient(#FF79DA, #9356DC);
+    background-color: linear-gradient (#FF79DA, #9356DC);
     opacity: 1;
-
 }
-
 
 .new {
     position: relative;
@@ -135,7 +133,7 @@ body {
 
 
 .section-name {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     margin-left: 20px;
 }
 
@@ -158,7 +156,7 @@ body {
     min-width: 320px;
     margin-top: 10px;
     height: 75px;
-   
+
     cursor: pointer;
     animation: cards-fading 2000ms forwards;
     transform: translateY(30px);
@@ -236,14 +234,14 @@ body {
             font-size: 18px;
             white-space: normal;
             font-weight: bold;
-            
+
         }
     }
 
     .menu-ingredients {
         white-space: nowrap;
         font-size: 14px;
-       font-weight:normal;
+        font-weight: normal;
     }
 
     .menu-ingredients {
@@ -273,17 +271,34 @@ body {
         padding-right: 20px;
     }
 
-    // .order-btn {
-    //     display: flex;
-    // }
+    .order-btn {
+        display: flex;
+        padding-top: 50px;
+    }
 
-    // .explore-btn {
-    //     margin-left: ;
-    // }
+    .explore-btn {
+        display: flex;
+        margin-top: 140px;
+        width: 230px;
+        height: 50px;
+        font-size: 17px;
+        border-radius: 30px;
+        background-image: linear-gradient(#FF79DA, #9356DC);
+        color: white;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+
+        &:hover {
+            background-image: linear-gradient(lighten(#FF79DA, 3%), lighten(#9356DC, 3%));
+
+
+        }
+    }
 
 
     footer {
-        padding-left: 0;
+
         padding-bottom: 10px;
 
     }
@@ -340,6 +355,7 @@ body {
         .explore-btn {
             margin-left: 250px;
 
+
         }
 
         @media (min-width:993px) {
@@ -379,6 +395,8 @@ body {
                 margin-left: 300px;
                 width: 250px;
                 height: 60px;
+                margin-top: 30px;
+
             }
 
 
