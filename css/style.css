@@ -101,6 +101,7 @@ header {
   background-color: #e5e6e7;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 30px;
   border-radius: 50px 50px 0 0;
   margin-top: -65px;
   position: relative;
@@ -243,13 +244,14 @@ header {
 }
 .menu-item .order-btn {
   display: flex;
-  padding-top: 50px;
 }
 .menu-item .explore-btn {
   width: 230px;
   height: 50px;
   font-size: 17px;
   border-radius: 30px;
+  margin-bottom: 30px;
+  margin-top: 50px;
   background-image: linear-gradient(#FF79DA, #9356DC);
   color: white;
   border: none;
