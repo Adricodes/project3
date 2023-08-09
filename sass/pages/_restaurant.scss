@@ -86,9 +86,9 @@ header {
 
 .menu {
     background-color: $light-grey;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 30px;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    // padding-bottom: 30px;
     border-radius: 50px 50px 0 0;
     margin-top: -65px;
     position: relative;
@@ -117,15 +117,20 @@ header {
 }
 
 
-.menu-group {
-    padding: 10px;
-}
+// .menu-group {
+//     padding: 10px;
+//     display: inline-flex;
+//     flex-direction:column;
+//     justify-items:center;
+//     align-items: center;
+// }
 
 
 
 .menu-cards {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
 
@@ -327,20 +332,23 @@ header {
             margin-left: 20px;
         }
 
-        .menu-group {
-            display: flex;
-
-
-        }
-
         .menu-item {
             margin-left: 110px;
             min-width: 380px;
             max-width: 550px;
+        }
+
+        .menu-group {
+            display: inline;
+            flex-wrap: wrap;
 
         }
 
-        
+        //         .menu-cards {
+        // display: inline-block;
+        // flex-direction: row;
+        //         }
+
         .explore-btn {
             margin-left: 350px;
         }
@@ -371,6 +379,12 @@ header {
                 max-width: 950px;
                 margin-right: 140px;
             }
+
+            // .menu-group {
+            //     display: inline;
+            //     justify-content: center;
+            //     align-items: center;
+            // }
 
             .explore-btn {
                 margin-left: 300px;
