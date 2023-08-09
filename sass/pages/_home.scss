@@ -66,12 +66,12 @@ header {
 
 
 .home-logo {
-  
+
   font-family: 'shrikhand', cursive;
   font-size: 28px;
   justify-content: center;
   padding-bottom: 10px;
-  
+
 
 }
 
@@ -111,9 +111,11 @@ header {
   font-weight: 200;
   font-family: 'Open sans', sans-serif;
   text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+
 
 .explore-btn {
   width: 230px;
@@ -121,6 +123,7 @@ header {
   font-size: 17px;
   border-radius: 30px;
   margin-top: 30px;
+  margin-bottom: 30px;
   margin-left: 5px;
   background-image: linear-gradient(#FF79DA, #9356DC);
   color: white;
@@ -192,6 +195,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   &--highlighted {
@@ -266,7 +271,7 @@ a {
   top: 30px;
   font-size: 26px;
   font-weight: 100;
-  
+
 }
 
 
@@ -453,6 +458,7 @@ a {
   .home-logo {
     height: 35px;
     margin-top: 10px;
+    margin-bottom: 30px;
     background-color: white;
     justify-content: center;
   }
@@ -488,7 +494,7 @@ a {
 
   .explore-btn {
     font-size: 22px;
-    margin-top: 60px;
+
     width: 280px;
     height: 70px;
     margin-left: 0;
