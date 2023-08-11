@@ -42,19 +42,21 @@ header {
 
 .heart-area {
     position: relative;
-    right: 310px;
+    right: 330px;
+
 }
 
-.empty-heart {
+.nothing-in-heart {
     position: absolute;
-    left: 0;
+    left: 220px;
+    bottom: 30px;
     font-size: 30px;
     color: black;
 }
 
-.filled-heart {
+.full-in-heart {
     position: absolute;
-    left: 0;
+    left: 40px;
     font-size: 30px;
     opacity: 0;
     background-color: linear-gradient(#FF79DA, #9356DC);
@@ -64,7 +66,7 @@ header {
     transition: opacity 500ms;
 }
 
-.filled-heart:hover {
+.full-in-heart:hover {
     background-color: linear-gradient (#FF79DA, #9356DC);
     opacity: 1;
 }
@@ -133,7 +135,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-
+    gap: 30px;
 }
 
 
@@ -321,10 +323,14 @@ header {
 
         }
 
+
+
         .menu-title {
             font-size: 30px;
             padding-left: 120px;
         }
+
+
 
         .section-name,
         .underline {
@@ -341,7 +347,7 @@ header {
         .menu-group {
             display: inline;
             flex-wrap: wrap;
-
+            gap: 30px;
         }
 
         //         .menu-cards {
@@ -364,6 +370,9 @@ header {
                 padding-top: 10px;
             }
 
+            // .empty-heart {
+            //     padding-bottom: 60px;
+            // }
 
             .section-name {
                 padding-left: 120px;
@@ -373,18 +382,6 @@ header {
                 margin-left: 120px;
                 width: 60px;
             }
-
-            .menu-item {
-                min-width: 550px;
-                max-width: 950px;
-                margin-right: 140px;
-            }
-
-            // .menu-group {
-            //     display: inline;
-            //     justify-content: center;
-            //     align-items: center;
-            // }
 
             .explore-btn {
                 margin-left: 300px;
