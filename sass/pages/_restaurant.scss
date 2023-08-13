@@ -47,18 +47,20 @@ header {
 
 }
 
-.empty-heart {
+.nothing-heart {
     position: absolute;
-    left: 300px;
+    left: 250px;
+    top: 30px;
     font-size: 30px;
     color: black;
 }
 
 
 
-.filled-heart {
+.full-heart {
     position: absolute;
-    left: 1px;
+    left: 250px;
+    top: 30px;
     font-size: 30px;
     opacity: 0;
     background-color: linear-gradient(#FF79DA, #9356DC);
@@ -68,7 +70,7 @@ header {
     transition: opacity 500ms;
 }
 
-.filled-heart:hover {
+.full-heart:hover {
     background-color: linear-gradient (#FF79DA, #9356DC);
     opacity: 1;
 }
@@ -339,10 +341,6 @@ header {
             margin-left: 20px;
         }
 
-        .empty-heart {
-            left: 50px;
-        }
-
 
         .menu-item {
             margin-left: 110px;
@@ -356,7 +354,7 @@ header {
             gap: 30px;
         }
 
-  
+
 
         .explore-btn {
             margin-left: 350px;
@@ -382,6 +380,7 @@ header {
                 margin-left: 120px;
                 width: 60px;
             }
+
 
 
             .explore-btn {

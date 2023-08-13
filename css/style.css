@@ -60,16 +60,18 @@ header {
   bottom: 0;
 }
 
-.empty-heart {
+.nothing-heart {
   position: absolute;
-  left: 300px;
+  left: 250px;
+  top: 30px;
   font-size: 30px;
   color: black;
 }
 
-.filled-heart {
+.full-heart {
   position: absolute;
-  left: 1px;
+  left: 250px;
+  top: 30px;
   font-size: 30px;
   opacity: 0;
   background-color: linear-gradient(#FF79DA, #9356DC);
@@ -79,7 +81,7 @@ header {
   transition: opacity 500ms;
 }
 
-.filled-heart:hover {
+.full-heart:hover {
   background-color: linear-gradient #FF79DA, #9356DC;
   opacity: 1;
 }
@@ -292,9 +294,6 @@ header {
   .menu-item .underline {
     font-size: 22px;
     margin-left: 20px;
-  }
-  .menu-item .empty-heart {
-    left: 50px;
   }
   .menu-item .menu-item {
     margin-left: 110px;
