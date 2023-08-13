@@ -56,20 +56,20 @@ header {
 
 .heart-area {
   position: relative;
-  right: 330px;
+  right: 350px;
+  bottom: 0;
 }
 
-.nothing-in-heart {
+.empty-heart {
   position: absolute;
-  left: 220px;
-  bottom: 30px;
+  left: 300px;
   font-size: 30px;
   color: black;
 }
 
-.full-in-heart {
+.filled-heart {
   position: absolute;
-  left: 40px;
+  left: 1px;
   font-size: 30px;
   opacity: 0;
   background-color: linear-gradient(#FF79DA, #9356DC);
@@ -79,7 +79,7 @@ header {
   transition: opacity 500ms;
 }
 
-.full-in-heart:hover {
+.filled-heart:hover {
   background-color: linear-gradient #FF79DA, #9356DC;
   opacity: 1;
 }
@@ -123,6 +123,14 @@ header {
   padding-left: 30px;
 }
 
+.menu-group {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
 .menu-cards {
   display: inline-flex;
   justify-content: center;
@@ -134,13 +142,13 @@ header {
 
 .section-name {
   margin-bottom: 5px;
-  margin-left: 5px;
+  margin-right: 225px;
 }
 
 .underline {
   border: 1px solid #99E2D0;
   width: 40px;
-  margin-left: 5px;
+  margin-right: 250px;
 }
 
 .order-btn {
@@ -148,6 +156,23 @@ header {
   display: flex;
   justify-content: center;
   padding-bottom: 25px;
+}
+
+.explore-btn {
+  width: 230px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+}
+.explore-btn:hover {
+  background-image: linear-gradient(#ff88de, #9b63df);
 }
 
 .menu-item {
@@ -241,22 +266,6 @@ header {
   padding-top: 29px;
   padding-right: 20px;
 }
-.menu-item .explore-btn {
-  width: 230px;
-  height: 50px;
-  font-size: 1px;
-  border-radius: 30px;
-  margin-bottom: 30px;
-  margin-top: 50px;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
-}
-.menu-item .explore-btn:hover {
-  background-image: linear-gradient(#ff88de, #9b63df);
-}
 .menu-item footer {
   padding-bottom: 10px;
 }
@@ -283,6 +292,9 @@ header {
   .menu-item .underline {
     font-size: 22px;
     margin-left: 20px;
+  }
+  .menu-item .empty-heart {
+    left: 50px;
   }
   .menu-item .menu-item {
     margin-left: 110px;
@@ -479,7 +491,7 @@ header {
   display: flex;
 }
 
-.explore {
+.exploration {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -504,7 +516,7 @@ header {
   padding-right: 20px;
 }
 
-.explore-btn {
+.exploration-btn {
   width: 230px;
   height: 50px;
   font-size: 17px;
@@ -518,7 +530,7 @@ header {
   cursor: pointer;
   box-shadow: 0px 5px 15px 0px rgba(37, 35, 35, 0.35);
 }
-.explore-btn:hover {
+.exploration-btn:hover {
   background-image: linear-gradient(#ff88de, #9b63df);
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.8);
 }
@@ -723,7 +735,7 @@ a {
     text-align: center;
     font-size: 26px;
   }
-  .explore-btn {
+  .exploration-btn {
     width: 230px;
     height: 60px;
     font-size: 18px;
@@ -805,7 +817,7 @@ a {
     display: flex;
     height: 600px;
   }
-  .explore {
+  .exploration {
     width: 50%;
     padding-bottom: 0;
     background-color: white;
@@ -815,7 +827,7 @@ a {
     padding-left: 0px;
     padding-top: 60px;
   }
-  .explore-btn {
+  .exploration-btn {
     font-size: 22px;
     width: 280px;
     height: 70px;

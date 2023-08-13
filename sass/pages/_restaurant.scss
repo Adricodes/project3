@@ -42,21 +42,23 @@ header {
 
 .heart-area {
     position: relative;
-    right: 330px;
+    right: 350px;
+    bottom: 0;
 
 }
 
-.nothing-in-heart {
+.empty-heart {
     position: absolute;
-    left: 220px;
-    bottom: 30px;
+    left: 300px;
     font-size: 30px;
     color: black;
 }
 
-.full-in-heart {
+
+
+.filled-heart {
     position: absolute;
-    left: 40px;
+    left: 1px;
     font-size: 30px;
     opacity: 0;
     background-color: linear-gradient(#FF79DA, #9356DC);
@@ -66,7 +68,7 @@ header {
     transition: opacity 500ms;
 }
 
-.full-in-heart:hover {
+.filled-heart:hover {
     background-color: linear-gradient (#FF79DA, #9356DC);
     opacity: 1;
 }
@@ -119,13 +121,13 @@ header {
 }
 
 
-// .menu-group {
-//     padding: 10px;
-//     display: inline-flex;
-//     flex-direction:column;
-//     justify-items:center;
-//     align-items: center;
-// }
+.menu-group {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
 
 
 
@@ -141,13 +143,13 @@ header {
 
 .section-name {
     margin-bottom: 5px;
-    margin-left: 5px;
+    margin-right: 225px;
 }
 
 .underline {
     border: 1px solid $tertiary-color;
     width: 40px;
-    margin-left: 5px;
+    margin-right: 250px;
 
 }
 
@@ -158,6 +160,27 @@ header {
     justify-content: center;
     padding-bottom: 25px;
 }
+
+
+.explore-btn {
+    width: 230px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+
+    &:hover {
+        background-image: linear-gradient(lighten(#FF79DA, 3%), lighten(#9356DC, 3%));
+
+    }
+}
+
 
 .menu-item {
     display: flex;
@@ -279,24 +302,6 @@ header {
     }
 
 
-    .explore-btn {
-        width: 230px;
-        height: 50px;
-        font-size: 1px;
-        border-radius: 30px;
-        margin-bottom: 30px;
-        margin-top: 50px;
-        background-image: linear-gradient(#FF79DA, #9356DC);
-        color: white;
-        border: none;
-        cursor: pointer;
-        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
-
-        &:hover {
-            background-image: linear-gradient(lighten(#FF79DA, 3%), lighten(#9356DC, 3%));
-
-        }
-    }
 
 
     footer {
@@ -323,20 +328,21 @@ header {
 
         }
 
-
-
         .menu-title {
             font-size: 30px;
             padding-left: 120px;
         }
-
-
 
         .section-name,
         .underline {
             font-size: 22px;
             margin-left: 20px;
         }
+
+        .empty-heart {
+            left: 50px;
+        }
+
 
         .menu-item {
             margin-left: 110px;
@@ -350,10 +356,7 @@ header {
             gap: 30px;
         }
 
-        //         .menu-cards {
-        // display: inline-block;
-        // flex-direction: row;
-        //         }
+  
 
         .explore-btn {
             margin-left: 350px;
@@ -370,9 +373,6 @@ header {
                 padding-top: 10px;
             }
 
-            // .empty-heart {
-            //     padding-bottom: 60px;
-            // }
 
             .section-name {
                 padding-left: 120px;
@@ -382,6 +382,7 @@ header {
                 margin-left: 120px;
                 width: 60px;
             }
+
 
             .explore-btn {
                 margin-left: 300px;
@@ -393,7 +394,6 @@ header {
 
         }
     }
-
 
     .restaurants {
         background-color: whitesmoke;
