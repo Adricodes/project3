@@ -63,7 +63,7 @@ header {
     top: 30px;
     font-size: 30px;
     opacity: 0;
-    background-color: linear-gradient(#FF79DA, #9356DC);
+    background: linear-gradient(#FF79DA, #9356DC);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -71,7 +71,7 @@ header {
 }
 
 .full-heart:hover {
-    background-color: linear-gradient (#FF79DA, #9356DC);
+    // background-color: linear-gradient (#FF79DA, #9356DC);
     opacity: 1;
 }
 

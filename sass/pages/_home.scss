@@ -117,7 +117,7 @@ header {
 
 
 
-.exploration-btn {
+.explore-btn {
   width: 230px;
   height: 50px;
   font-size: 17px;
@@ -249,8 +249,6 @@ a {
 
 .filled-heart {
   position: absolute;
-  // left: 160px;
-  // top: 170px;
   font-size: 30px;
   opacity: 0;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -260,7 +258,7 @@ a {
   transition: opacity 500ms;
 
   &:hover {
-    background-color: linear-gradient(#FF79DA, #9356DC);
+   
     opacity: 1;
   }
 }
@@ -268,7 +266,7 @@ a {
 .empty-heart,
 .filled-heart {
   left: 250px;
-  top: 30px;
+  top: 1700px;
   font-size: 26px;
   font-weight: 100;
 
@@ -370,7 +368,7 @@ a {
 
   }
 
-  .exploration-btn {
+  .explore-btn {
     width: 230px;
     height: 60px;
     font-size: 18px;
@@ -483,7 +481,7 @@ a {
 
   }
 
-  .exploration {
+  .explore {
     width: 50%;
     padding-bottom: 0;
     background-color: white;
@@ -495,7 +493,7 @@ a {
     padding-top: 60px;
   }
 
-  .exploration-btn {
+  .explore-btn {
     font-size: 22px;
 
     width: 280px;

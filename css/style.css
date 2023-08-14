@@ -74,7 +74,7 @@ header {
   top: 30px;
   font-size: 30px;
   opacity: 0;
-  background-color: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -82,7 +82,6 @@ header {
 }
 
 .full-heart:hover {
-  background-color: linear-gradient #FF79DA, #9356DC;
   opacity: 1;
 }
 
@@ -515,7 +514,7 @@ header {
   padding-right: 20px;
 }
 
-.exploration-btn {
+.explore-btn {
   width: 230px;
   height: 50px;
   font-size: 17px;
@@ -529,7 +528,7 @@ header {
   cursor: pointer;
   box-shadow: 0px 5px 15px 0px rgba(37, 35, 35, 0.35);
 }
-.exploration-btn:hover {
+.explore-btn:hover {
   background-image: linear-gradient(#ff88de, #9b63df);
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.8);
 }
@@ -643,14 +642,13 @@ a {
   transition: opacity 500ms;
 }
 .filled-heart:hover {
-  background-color: linear-gradient(#FF79DA, #9356DC);
   opacity: 1;
 }
 
 .empty-heart,
 .filled-heart {
   left: 250px;
-  top: 30px;
+  top: 1700px;
   font-size: 26px;
   font-weight: 100;
 }
@@ -734,7 +732,7 @@ a {
     text-align: center;
     font-size: 26px;
   }
-  .exploration-btn {
+  .explore-btn {
     width: 230px;
     height: 60px;
     font-size: 18px;
@@ -816,7 +814,7 @@ a {
     display: flex;
     height: 600px;
   }
-  .exploration {
+  .explore {
     width: 50%;
     padding-bottom: 0;
     background-color: white;
@@ -826,7 +824,7 @@ a {
     padding-left: 0px;
     padding-top: 60px;
   }
-  .exploration-btn {
+  .explore-btn {
     font-size: 22px;
     width: 280px;
     height: 70px;
