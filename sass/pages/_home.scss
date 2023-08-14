@@ -117,7 +117,7 @@ header {
 
 
 
-.explore-btn {
+.exploration-btn {
   width: 230px;
   height: 50px;
   font-size: 17px;
@@ -258,7 +258,7 @@ a {
   transition: opacity 500ms;
 
   &:hover {
-   
+
     opacity: 1;
   }
 }
@@ -266,7 +266,7 @@ a {
 .empty-heart,
 .filled-heart {
   left: 250px;
-  top: 1700px;
+  top: 30px;
   font-size: 26px;
   font-weight: 100;
 
@@ -368,9 +368,9 @@ a {
 
   }
 
-  .explore-btn {
+  .exploration-btn {
     width: 230px;
-    height: 60px;
+    height: 50px;
     font-size: 18px;
     font-weight: 600;
     margin-left: 0;
@@ -413,14 +413,15 @@ a {
 
   }
 
-.new {
-  top: 20px;
-}
+  .new {
+    top: 20px;
+  }
 
-.empty-heart, .empty-heart {
-  left: 270px;
-  top: 170px;
-}
+  .empty-heart,
+  .filled-heart {
+    left: 270px;
+    top: 170px;
+  }
 
   .restaurant-cardbox {
     gap: 70px;
@@ -481,8 +482,8 @@ a {
 
   }
 
-  .explore {
-    width: 50%;
+  .exploration {
+    width: 80%;
     padding-bottom: 0;
     background-color: white;
   }
@@ -493,16 +494,16 @@ a {
     padding-top: 60px;
   }
 
-  .explore-btn {
-    font-size: 22px;
 
+  .exploration-btn {
+    font-size: 20px;
     width: 280px;
-    height: 70px;
+    height: 50px;
     margin-left: 0;
   }
 
   .instructions {
-    width: 50%;
+    width: 80%;
 
   }
 
