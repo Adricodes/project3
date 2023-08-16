@@ -62,16 +62,16 @@ header {
 
 .nothing-heart {
   position: absolute;
-  left: 250px;
-  top: 30px;
+  left: 290px;
+  top: 20px;
   font-size: 30px;
   color: black;
 }
 
 .full-heart {
   position: absolute;
-  left: 250px;
-  top: 30px;
+  left: 290px;
+  top: 20px;
   font-size: 30px;
   opacity: 0;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -117,7 +117,7 @@ header {
   display: flex;
   justify-content: start;
   width: 100%;
-  font-size: 28px;
+  font-size: 24px;
   padding-top: 0px;
   font-family: "shrikhand", cursive;
   font-weight: 400;
@@ -138,7 +138,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  gap: 30px;
+  gap: 0;
 }
 
 .section-name {
@@ -409,6 +409,11 @@ header {
   opacity: 0;
 }
 .delay-card-third {
+  animation: cards-fading 2000ms 1000ms forwards;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.delay-card-fourth {
   animation: cards-fading 2000ms 1000ms forwards;
   transform: translateY(30px);
   opacity: 0;
